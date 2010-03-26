@@ -1,0 +1,84 @@
+;;temel ayarlar
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;imlecin aşağı inmesi durumunda ortalamasını engellemek
+;;(setq scroll-conservatively 1)
+
+(tool-bar-mode nil)
+(menu-bar-mode nil)
+
+(setq show-trailing-whitespace t)	; show whitespaces at the end of the line
+
+(setq line-number-mode t)
+(setq column-number-mode t)
+
+(setq make-backup-files nil)		; no nasty back-up files
+(setq scroll-step 1)
+
+(custom-set-faces
+ '(highlight ((t (:background "gray20"))))
+ '(region ((t (:background "gray40")))))
+
+; speedbar is cool
+(global-set-key (kbd "C-c s") 'speedbar)
+
+
+;; python-mode-hook
+;; no tabs only spaces
+;; use outline-minor-mode
+(add-hook 'python-mode-hook
+	  (lambda ()
+	    (setq indent-tabs-mode nil)
+	    (outline-minor-mode)
+	    (setq outline-regexp " *\\(def \\|clas\\|#hea\\)")))
+
+;; Don't use tabs in any text-mode
+(add-hook 'text-mode-hook
+	  (lambda ()
+	    (setq indent-tabs-mode nil)))
+
+
+
+(setq frame-title-format "%b (%m)")	; descriptive frame title "filename (mode)"
+
+
+;;for cc-mode
+;;C++, Objective-C, Java, CORBA's IDL, Pike, and AWK
+(autoload 'awk-mode "cc-mode" nil t)
+
+;; for muse
+;; Initialize
+(require 'outline)       ; I like outline-style faces
+(require 'muse)          ; load generic module
+(require 'muse-colors)   ; load coloring/font-lock module
+(require 'muse-mode)     ; load authoring mode
+(require 'muse-blosxom)  ; load blosxom module
+(require 'muse-docbook)  ; load DocBook publishing style
+(require 'muse-html)     ; load (X)HTML publishing style
+(require 'muse-latex)    ; load LaTeX/PDF publishing styles
+(require 'muse-latex2png) ; publish <latex> tags
+(require 'muse-project)  ; load support for projects
+(require 'muse-texinfo)  ; load Info publishing style
+(require 'muse-wiki)     ; load Wiki support
+(require 'muse-xml)      ; load XML support
+;;(require 'muse-message)  ; load message support (experimental)
+(muse-derive-style "my-xhtml" "xhtml"
+		   :header "~/public_html/docs/muse/tr-header.html"
+		   :footer "~/public_html/docs/muse/tr-footer.html")
+(setq muse-project-alist
+      '(("Documents"
+	 ("~/public_html/docs/muse" :default "index")
+	 (:base "my-xhtml" :path "~/public_html/docs/"))))
+;; muse end
+
+;;for java-mode -- jdee
+(setq load-path (cons "~/emacs.d/modes/jdee/lisp" load-path))
+;;şuan bulamıyor, bulabileceği zaman aktif yap
+;;(require 'jde)
+
+;; for python-mode
+(autoload 'python-mode "python-mode" "Python Mode." t)
+(add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
+(add-to-list 'interpreter-mode-alist '("python" . python-mode))
+
+;; for pardus
+(pardus-auto-load-all)
