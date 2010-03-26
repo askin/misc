@@ -1,0 +1,99 @@
+#1. bölüm, ayar dosyası seçenekleri
+
+#arkaplan çizme özelliği
+background yes
+
+#güncelleme aralığı, saniye olarak
+update_interval 1.0
+
+#kendi penceresine sahip olması
+own_window yes
+
+#pencere türü
+own_window_type normal
+
+#pencere şeffaflığı
+own_window_transparent yes
+
+#pencere özellikleri
+own_window_hints undecorated,below,sticky,skip_pager,skip_taskbar
+
+#gelişmiş ekran önbelleği kullanımı
+double_buffer yes
+
+#en geniş boyutu
+maximum_width 190
+
+#gölgesi
+draw_shades no
+
+#çerçeveleri
+draw_borders no
+
+#grafiklerin çerçeveleri
+draw_graph_borders no
+
+#öntanımlı renk
+default_color gray
+
+#öntanımlı gölge rengi
+default_shade_color red
+
+#yerleşim, şu anda sağ üstte
+alignment top_right
+
+#sağ-sol oranında kenarda bırakacağı boşluk
+gap_x 5
+
+#üst-alt oranında kenarda bırakacağı boşluk
+gap_y 30
+
+#yumuşatılmış font kullanma ayarı
+use_xft yes
+
+#xft yumuşatma değeri
+xftalpha 0.8
+
+#xft yazıtipi
+xftfont Monospace:size=7.8
+
+#utf-8 zorlaması, Türkçe için gerekli
+override_utf8_locale yes
+
+#2. bölüm, değişkenler ve conky ekranında yazılacaklar
+#değişkenler hakkında ayrıntılı bilgiyi http://conky.sourceforge.net/variables.html adresinden alabilirsiniz
+
+TEXT
+Pardus GNU/Linux ${color red}kelebek@PIS-ii
+${color white}d(o.O)b ${alignc}${color white}${font openlogos:size=15} @$font$color ${alignr}${color grey}$kernel
+$hr
+${color blue}Uptime:$color${alignr}${color green}$uptime
+${color blue}RAM:$color ${color green}$mem/$memmax${alignr}${color yellow}%$memperc
+${color blue}Frekans(G):$color${color green}$freq_g${color red}${alignr}Sıcaklık:$acpitemp
+${color blue}CPU #1: $color ${color green}${cpu cpu1}% ${color yellow}${cpubar 4}
+${color blue}CPU #2: $color ${color green}${cpu cpu2}% ${color yellow}${cpubar 4}
+${alignr}${color red}Nvidia GPU:${execi 60 nvidia-settings -query GPUCoreTemp | perl -ne 'print $1 if /GPUCoreTemp.*?: (\d+)./;'}°C
+
+${color yellow}IP: ${addr eth0}
+${color green}LAN Download: $alignr${color #FF0009}LAN Upload:
+${color green}${downspeed eth0} k/s ${alignr} ${color #FF0009} ${upspeed eth0} k/s
+${color green}${downspeedgraph eth0 15,70} ${alignr}${color #FF0009}${upspeedgraph eth0 15,70}
+${color green}${totaldown eth0}${alignr}${color #FF0009}${totalup eth0}
+Wireless  $hr
+${color #B8FF00}IP: ${addr wlan0} ${alignr}${color orange}${wireless_bitrate wlan0}${color white}
+${color orange}%${wireless_link_qual_perc wlan0}${color white}${alignr}${wireless_link_bar 8,145 wlan0}
+${color green}ID: ${color orange}${wireless_essid wlan0}${color white}
+${color green}WiFi Download: ${color white}${alignc} $alignr${color #FF0009}WiFi Upload:
+${color green}${downspeed wlan0}KB/s    ${color #FF0009} ${alignr}${upspeed wlan0}KB/s
+${color green}${downspeedgraph wlan0 15,70} ${alignr}${color #FF0009}${upspeedgraph wlan0 15,70}
+${color green}${totaldown wlan0}${alignr}${color #FF0009}${totalup wlan0}
+${color red}MPD $hr
+${color green}${if_running mpd}$mpd_smart
+$mpd_album
+$mpd_status $mpd_elapsed/$mpd_length$endif
+${color red}islemler $hr
+${color yellow} Name              PID    CPU%
+${color lightgrey} ${top name 1} ${top pid 1} ${top cpu 1}${color yellow}%
+${color lightgrey} ${top name 2} ${top pid 2} ${top cpu 2}${color yellow}%
+${color lightgrey} ${top name 3} ${top pid 3} ${top cpu 3}${color yellow}%
+${color lightgrey} ${top name 4} ${top pid 4} ${top cpu 4}${color yellow}%
