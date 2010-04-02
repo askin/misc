@@ -48,7 +48,7 @@
 <!-- End SC -->
 
 <?php if (function_exists('trackTheme')) { ?>
-<?php get_sidebar(); ?><?php trackTheme("dilectio");  ?>
+<?php get_sidebar(); ?><?php trackTheme("kelebek");  ?>
 <?php } ?>
 
 <?php get_sidebar(); ?>
