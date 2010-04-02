@@ -36,6 +36,9 @@ if [ "$ZSH_NAME" = "$zz" ]; then
     setopt SHARE_HISTORY
     setopt EXTENDED_HISTORY
 
+    # end/home keys
+    bindkey '^[OH' beginning-of-line
+    bindkey '^[OF' end-of-line
 else
 
     # check the window size after each command and, if necessary,
