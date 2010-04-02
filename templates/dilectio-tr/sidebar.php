@@ -57,48 +57,7 @@
     <!-- Start SideBar2 -->
     <div class="SRR">
         <?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar(2) ) : else : ?>
-
-        <!-- Start Hayat -->
-        <div class="hayat">
-            <a href="http://www.hayattv.net/">
-                <img src="http://blog.yollu.com/images/hayat.png" alt="Hayat Susturulamaz!!!" />
-            </a>
-        </div>
-        <!-- End Hayat    -->
-
-        <!-- Start Categories -->
-        <div class="widget widget_categories">
-            <h2>Kategoriler</h2>
-            <ul>
-                <?php wp_list_cats('show_count=1'); ?>
-            </ul>
-        </div>
-        <!-- End Categories -->
-
-        <div id="twitter_div">
-            <h2 class="sidebar-title">Twitter</h2>
-            <ul id="twitter_update_list"></ul>
-        </div>
-        <!-- Start Links -->
-        <div class="widget widget_links">
-            <h2>Bağlantılar</h2>
-            <ul><?php get_links('-1', '<li>', '</li>', '', FALSE, 'id', FALSE, FALSE, -1, FALSE); ?>
-            </ul>
-        </div>
-        <!-- End Links -->
-
-        <!-- Start Ubuntu -->
-        <center>
-            <img src="<?php echo get_option('home'); ?>/images/ubuntu.png" width="150px" alt="Ubuntu" />
-        </center>
-        <!-- Stop  Ubuntu -->
-
-        <!-- Start Debian -->
-        <center>
-            <img src="<?php echo get_option('home'); ?>/images/debian.png" width="150px" alt="Debian" />
-        </center>
-        <!-- Stop  Debian -->
-
+        <p>Sidebar has a problem</p>
         <?php endif; ?>
     </div>
     <!-- End SideBar2 -->
