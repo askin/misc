@@ -4,33 +4,69 @@
 # don't put duplicate lines in the history. See bash(1) for more options
 export HISTCONTROL=ignoredups
 
-# check the window size after each command and, if necessary,
-# update the values of LINES and COLUMNS.
-shopt -s checkwinsize
-
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(lesspipe)"
+zz="zsh"
+if [ "$ZSH_NAME" = "$zz" ]; then
 
-#PS1="\[\033[0;37;40m\u\033[0;33;40m@\033[0;32;40m\h:\033[0;33;40m\W$ \033[0m]"
-# 31 red
-# 32 green
-# 33 yellow
-sc="\[\033[0;33;60m\]"
-hn="\[\033[0;32;60m\]"
-un="\[\033[0;31;60m\]"
-wc="\[\033[0m\]"
+    test -f /etc/DIR_COLORS && eval `dircolors /etc/DIR_COLORS`
 
-PS1=${un}'\u'${sc}@${hn}'\h':${sc}'~$ '${wc}
+    autoload -U colors
+    colors
 
-# If this is an xterm set the title to user@host:dir
-case "$TERM" in
-xterm*|rxvt*)
-    PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
-    ;;
-*)
-    ;;
-esac
+    # Default prompt
+    if [[ "$USER" == root ]]; then
+        export PS1="%{$fg[red]%}[%n@%m]%{$reset_color$fg[white]%}[%D{%H:%M:%S}]%{$reset_color%}%{$fg[cyan]%}
+[%~]>%{$reset_color%} "
+    else
+        export PS1="%{$fg[green]%}[%n@%m]%{$reset_color$fg[white]%}[%D{%H:%M:%S}]%{$reset_color%}%{$fg[cyan]%}
+[%~]>%{$reset_color%} "
+    fi
 
+    # Auto completion
+    autoload -U compinit promptinit
+    compinit
+    promptinit
+
+    # History
+    export HISTFILE=~/.zsh_cache/zsh_history
+    export HISTSIZE=50000
+    export SAVEHIST=50000
+    export HISTCONTROL=ignoredups
+    setopt SHARE_HISTORY
+    setopt EXTENDED_HISTORY
+
+else
+
+    # check the window size after each command and, if necessary,
+    # update the values of LINES and COLUMNS.
+    shopt -s checkwinsize
+
+    # 31 red
+    # 32 green
+    # 33 yellow
+    sc="\[\033[0;33;60m\]"
+    hn="\[\033[0;32;60m\]"
+    un="\[\033[0;31;60m\]"
+    wc="\[\033[0m\]"
+
+    PS1=${un}'\u'${sc}@${hn}'\h':${sc}'~$ '${wc}
+
+    # If this is an xterm set the title to user@host:dir
+    case "$TERM" in
+        xterm*|rxvt*)
+            PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
+            ;;
+        *)
+            ;;
+    esac
+
+    # enable programmable completion feature
+    if [ -f /etc/bash_completion ]; then
+        . /etc/bash_completion
+    fi
+
+fi
 # enable color support of ls and also add handy aliases
 if [ "$TERM" != "dumb" ]; then
     eval "`dircolors -b`"
@@ -44,22 +80,32 @@ alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
 
-# enable programmable completion features (you don't need to enable
-# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
-# sources /etc/bash.bashrc).
-if [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
-fi
-
 # My alias'
 alias temperature="cat /proc/acpi/thermal_zone/THRM/temperature"
+alias ssh-pis-iii="ssh 192.168.3.104"
+alias film-archive="gedit ~/pinar\&me/film-archive"
+alias mount-pis-iii="sshfs -o allow_other kelebek@192.168.3.104:/ /media/PIS-iii/"
 alias php-on="sudo service apache start; sudo service mysql_server start"
 alias php-off="sudo service apache stop; sudo service mysql_server stop"
 alias nocaps="setxkbmap -option ctrl:nocaps"
 alias caps="setxkbmap -option -option capslock:caps"
+alias ssh-ay="ssh askinyollu@zagreb.dreamhost.com"
+alias m='more'
+
+alias .="cd .."
+alias ..="cd ../.."
+alias ...="cd ../../.."
+alias ....="cd ../../../.."
+alias .....="cd ../../../../.."
+alias ......="cd ../../../../.."
+
 # ssh alias
 # kelebek scp
+alias scp-ky="scp $1 kelebekyazilim@zagreb.dreamhost.com:$2"
 #alias lastfm-log="tail -f /var/log/lastfm/lastfm.log | ccze -A"
+
+alias svn="colorsvn"
+#alias diff="colordiff"
 
 # My variable
 export EDITOR="emacs -nw"
