@@ -107,6 +107,10 @@ alias scp-ky="scp $1 kelebekyazilim@zagreb.dreamhost.com:$2"
 alias svn="colorsvn"
 #alias diff="colordiff"
 
+export PACKAGE_TEMP_PATH="~/.pisi/package-templates/"
+# PiSi
+alias cpisi="cp -r $PACKAGE_TEMP_PATH $1"
+
 # My variable
 export EDITOR="emacs -nw"
 # pisi packagekit backend
