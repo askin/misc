@@ -1,4 +1,17 @@
-#!/usr/bin/env python
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+#
+# Licensed under GPL v2
+# Copyright 2010, Aşkın Yollu <askin@askin.ws>
+#
+# This program is free software; you can redistribute it and/or modify it under
+# the terms of the GNU General Public License as published by the Free
+# Software Foundation; either version 2 of the License, or (at your option)
+# any later version.
+#
+# Please read the COPYING file.
+#
+
 import pygtk
 pygtk.require('2.0')
 import gtk
@@ -8,7 +21,7 @@ class Ked:
         # reversable 
         self.reverseble_encryptions = ["Des", "Base64"]
         # notreversable
-        self.notreverseble_encryptions = ["sha1", "md5"]
+        self.notreverseble_encryptions = ["sha1", "sha224", "sha256", "sha384", "sha512", "md5"]
 
         # create window
         self.window = gtk.Window(gtk.WINDOW_TOPLEVEL)
@@ -31,11 +44,13 @@ class Ked:
         # First textbox
         self.textbox1 = gtk.TextView()
         self.textbox1.set_size_request(338, 144)
+        self.textbox1.set_wrap_mode(True)
         self.textbox1.show()
-        # Second texbox
+        # Second textbox
         self.textbox2 = gtk.TextView()
         self.textbox2.set_size_request(338, 144)
         self.textbox2.set_editable(False)
+        self.textbox2.set_wrap_mode(True)
         self.textbox2.show()
         # Add to layout
         self.layout.put(self.textbox1, 2, 2)
@@ -90,12 +105,36 @@ class Ked:
     This method call encryptions functions
     '''
     def encrypt(self, widget, data=None):
+        # get choose
         choose = self.combobox.get_active_text()
-        print "Encryption: %s" % choose
+
+        # do it
         if choose == "md5":
-            import md5
-            m = md5.new()
-            m.update()
+            import hashlib
+            m = hashlib.md5(self.get_text(self.textbox1))
+            self.set_text(self.textbox2, m.hexdigest())
+        elif choose == "sha1":
+            import hashlib
+            m = hashlib.sha1(self.get_text(self.textbox1))
+            self.set_text(self.textbox2, m.hexdigest())
+        elif choose == "sha224":
+            import hashlib
+            m = hashlib.sha224(self.get_text(self.textbox1))
+            self.set_text(self.textbox2, m.hexdigest())
+        elif choose == "sha256":
+            import hashlib
+            m = hashlib.sha256(self.get_text(self.textbox1))
+            self.set_text(self.textbox2, m.hexdigest())
+        elif choose == "sha384":
+            import hashlib
+            m = hashlib.sha384(self.get_text(self.textbox1))
+            self.set_text(self.textbox2, m.hexdigest())
+        elif choose == "sha512":
+            import hashlib
+            m = hashlib.sha512(self.get_text(self.textbox1))
+            self.set_text(self.textbox2, m.hexdigest())
+        else:
+            print "Yok Böyle Birşey"
 
     '''
     Decrypt button call this method
@@ -103,17 +142,21 @@ class Ked:
     '''
     def decrypt(self, widget, data=None):
         choose = self.combobox.get_active_text()
-        print "Decrypt!!!"
-        textbuffer1 = self.textbox1.get_buffer()
-        textbuffer2 = self.textbox2.get_buffer()
-        iter = textbuffer1.get_iter_at_offset(0)
-        text1 = iter.get_char()
+        text = self.get_text(self.textbox1)
+
+
+    # Return text for given textbox
+    def get_text(self, textbox):
+        textbuffer = textbox.get_buffer()
+        iter = textbuffer.get_iter_at_offset(0)
+        text = iter.get_char()
         while(iter.forward_char()):
-            text1 += iter.get_char()
+            text += iter.get_char()
+        return text
 
-        textbuffer2.set_text(text1)
-
-
+    def set_text(self, textbox, text):
+        textbuffer = textbox.get_buffer()
+        textbuffer.set_text(text)
 if __name__ == "__main__":
     base = Ked()
     base.main()
