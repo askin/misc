@@ -74,18 +74,22 @@ class Ked:
         # Create buttons
         self.encrypt_button = gtk.Button("Encrypt")
         self.decrypt_button = gtk.Button("Decrypt")
+        self.clear_button = gtk.Button("Clear")
 
         # Listen buttons
         self.encrypt_button.connect("clicked", self.encrypt, None)
         self.decrypt_button.connect("clicked", self.decrypt, None)
+        self.clear_button.connect("clicked", self.clear, None)
 
         # Add to layout
         self.layout.put(self.encrypt_button, 204, 295)
         self.layout.put(self.decrypt_button, 275, 295)
+        self.layout.put(self.clear_button, 133, 295)
 
         # Show
         self.decrypt_button.show()
         self.encrypt_button.show()
+        self.clear_button.show()
 
     '''
     Call GTK main
@@ -144,6 +148,9 @@ class Ked:
         choose = self.combobox.get_active_text()
         text = self.get_text(self.textbox1)
 
+    def clear(self, widget, data=None):
+        self.set_text(self.textbox1, "")
+        self.set_text(self.textbox2, "")
 
     # Return text for given textbox
     def get_text(self, textbox):
