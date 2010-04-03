@@ -20,7 +20,7 @@ import gtk
 
 class Ked:
     def __init__(self):
-        # reversable 
+        # reversable
         self.reverseble_encryptions = ["Base16", "Base32", "Base64"]
         # notreversable
         self.notreverseble_encryptions = ["sha1", "sha224", "sha256", "sha384", "sha512", "md5"]
@@ -28,6 +28,8 @@ class Ked:
         # create window
         self.window = gtk.Window(gtk.WINDOW_TOPLEVEL)
         self.window.set_title("Kelebek Encrypt / Decrypt Tool")
+        pix = gtk.gdk.pixbuf_new_from_file("./ked.png")
+        self.window.set_icon(pix)
         self.window.resize(340, 325)
         self.window.connect("destroy", self.destroy)
         self.layout = gtk.Layout(None, None)
