@@ -13,6 +13,7 @@
 #
 
 import pygtk
+import hashlib
 pygtk.require('2.0')
 import gtk
 
@@ -114,7 +115,6 @@ class Ked:
 
         # do it
         if choose == "md5":
-            import hashlib
             m = hashlib.md5(self.get_text(self.textbox1))
             self.set_text(self.textbox2, m.hexdigest())
         elif choose == "sha1":
