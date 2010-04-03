@@ -19,7 +19,7 @@ import gtk
 class Ked:
     def __init__(self):
         # reversable 
-        self.reverseble_encryptions = ["Des", "Base64"]
+        self.reverseble_encryptions = ["Base64", "Base32", "Base16"]
         # notreversable
         self.notreverseble_encryptions = ["sha1", "sha224", "sha256", "sha384", "sha512", "md5"]
 
@@ -118,23 +118,18 @@ class Ked:
             m = hashlib.md5(self.get_text(self.textbox1))
             self.set_text(self.textbox2, m.hexdigest())
         elif choose == "sha1":
-            import hashlib
             m = hashlib.sha1(self.get_text(self.textbox1))
             self.set_text(self.textbox2, m.hexdigest())
         elif choose == "sha224":
-            import hashlib
             m = hashlib.sha224(self.get_text(self.textbox1))
             self.set_text(self.textbox2, m.hexdigest())
         elif choose == "sha256":
-            import hashlib
             m = hashlib.sha256(self.get_text(self.textbox1))
             self.set_text(self.textbox2, m.hexdigest())
         elif choose == "sha384":
-            import hashlib
             m = hashlib.sha384(self.get_text(self.textbox1))
             self.set_text(self.textbox2, m.hexdigest())
         elif choose == "sha512":
-            import hashlib
             m = hashlib.sha512(self.get_text(self.textbox1))
             self.set_text(self.textbox2, m.hexdigest())
         else:
