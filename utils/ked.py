@@ -6,7 +6,7 @@ import gtk
 class Ked:
     def __init__(self):
         # reversable 
-        self.reverseble_encryptions = ["DES"]
+        self.reverseble_encryptions = ["Des", "Base64"]
         # notreversable
         self.notreverseble_encryptions = ["sha1", "md5"]
 
