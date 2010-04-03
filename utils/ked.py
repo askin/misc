@@ -14,13 +14,14 @@
 
 import pygtk
 import hashlib
+import base64
 pygtk.require('2.0')
 import gtk
 
 class Ked:
     def __init__(self):
         # reversable 
-        self.reverseble_encryptions = ["Base64", "Base32", "Base16"]
+        self.reverseble_encryptions = ["Base16", "Base32", "Base64"]
         # notreversable
         self.notreverseble_encryptions = ["sha1", "sha224", "sha256", "sha384", "sha512", "md5"]
 
@@ -132,6 +133,15 @@ class Ked:
         elif choose == "sha512":
             m = hashlib.sha512(self.get_text(self.textbox1))
             self.set_text(self.textbox2, m.hexdigest())
+        elif choose == "Base16":
+            m = base64.b16encode(self.get_text(self.textbox1))
+            self.set_text(self.textbox2, m)
+        elif choose == "Base32":
+            m = base64.b32encode(self.get_text(self.textbox1))
+            self.set_text(self.textbox2, m)
+        elif choose == "Base64":
+            m = base64.b64encode(self.get_text(self.textbox1))
+            self.set_text(self.textbox2, m)
         else:
             print "Yok Böyle Birşey"
 
@@ -141,7 +151,27 @@ class Ked:
     '''
     def decrypt(self, widget, data=None):
         choose = self.combobox.get_active_text()
-        text = self.get_text(self.textbox1)
+        if choose == "Base16":
+            try:
+                m = base64.b16decode(self.get_text(self.textbox1))
+                self.set_text(self.textbox2, m)
+            except:
+                self.set_text(self.textbox2, "Incorrect Coded String!!!")
+        elif choose == "Base32":
+            try:
+                m = base64.b32decode(self.get_text(self.textbox1))
+                self.set_text(self.textbox2, m)
+            except:
+                self.set_text(self.textbox2, "Incorrect Coded String!!!")
+        elif choose == "Base64":
+            try:
+                m = base64.b64decode(self.get_text(self.textbox1))
+                self.set_text(self.textbox2, m)
+            except:
+                self.set_text(self.textbox2, "Incorrect Coded String!!!")
+        else:
+            self.set_text(self.textbox2, "%s algorithm is not reversable!!!" % choose)
+
 
     def clear(self, widget, data=None):
         self.set_text(self.textbox1, "")
