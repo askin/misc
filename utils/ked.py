@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import pygtk
 pygtk.require('2.0')
 import gtk
@@ -18,7 +19,6 @@ class Base:
         self.init_textbox()
         self.init_combo()
         self.init_button()
-
         self.window.show()
 
     def init_textbox(self):
@@ -33,10 +33,12 @@ class Base:
         self.layout.put(self.textbox2, 2, 146)
 
     def init_combo(self):
-        self.combo = gtk.Combo()
-        self.combo.set_popdown_strings(self.notreverseble_encryptions + self.reverseble_encryptions)
-        self.layout.put(self.combo, 5, 295)
-        self.combo.show()
+        self.combobox = gtk.combo_box_new_text()
+        cb = gtk.combo_box_new_text()
+        self.layout.put(self.combobox, 5, 295)
+        for item in self.notreverseble_encryptions + self.reverseble_encryptions:
+            self.combobox.append_text(item)
+        self.combobox.show()
 
     def init_button(self):
         self.encrypt_button = gtk.Button("Encrypt")
@@ -56,7 +58,15 @@ class Base:
         gtk.main_quit()
 
     def encrypt(self, widget, data=None):
-        print "Encrypt!!!"
+        choose = self.combobox.get_active_text()
+        print "Encryption: %s" % choose
 
     def decrypt(self, widget, data=None):
+        choose = self.combobox.get_active_text()
         print "Decrypt!!!"
+        if(choose in self.notreverseble_encryptions):
+            print "No no no!!"
+
+if __name__ == "__main__":
+    base = Base()
+    base.main()
