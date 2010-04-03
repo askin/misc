@@ -124,3 +124,5 @@ export GIT_COMMITTER_EMAIL=askin@askin.ws
 
 # my java classpath
 export CLASSPATH=.:~/java-files/cem12x.jar:~/java-files/mysql-connector-java-5.1.6-bin.jar
+
+cat ~/.bash/name4.txt
