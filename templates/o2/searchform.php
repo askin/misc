@@ -1,2 +1,0 @@
-<form id="search" method="get" action="<?php bloginfo('home'); ?>/" ><input type="text" value="search" onfocus="if (this.value == 'search') {this.value = '';}" onblur="if (this.value == '') {this.value = 'search';}" size="18" maxlength="50" name="s" id="s" />
-</form>
