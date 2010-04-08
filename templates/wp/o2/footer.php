@@ -1,0 +1,1 @@
+<div id="footer">  <p> Copyright &#169; <?php echo date("Y") ?> <a href="<?php bloginfo('url'); ?>"><?php bloginfo('info'); ?></a> <br /><a href="http://blog.eches.net/themes">o2 2.0</a> : Designed by <a href="http://blog.eches.net">eches</a>  </p>        </div><!-- footer -->     </div><!-- wrapper --> </div><!-- outer --> </body> </html>

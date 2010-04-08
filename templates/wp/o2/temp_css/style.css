@@ -1,0 +1,642 @@
+/*  
+        Theme Name: o2
+        Theme URI: http://blog.eches.net
+        Description: o2 is a clean 3-column, widget-ready theme. It is tested on        WordPress 2.3.1. XHTML and CSS valid.
+        Version: 1.0
+        Author: eches
+        Author URI: http://blog.eches.net/
+	The CSS, XHTML and design is released under GPL:
+	http://www.opensource.org/licenses/gpl-license.php
+
+*/
+
+body, h1, h2, h3, h4, h5, h6, p, form {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, Georgia, Sans-serif;
+	font-size: 12px;
+	vertical-align: top;
+	background: #000;
+}
+
+h1 {
+	font-family: Arial, Sans-serif;
+	font-size: 30px;
+	padding: 0 0 10px 0;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: #06558d;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+p {
+	padding: 10px 0 0 0;
+}
+#outer {
+        width:970px;
+        background:#fff;
+        margin: 5px auto 1px auto;
+        padding: 0 0 1px 0;
+}
+
+#wrapper{
+	margin: 0 auto 0px auto;
+	width: 966px;
+	text-align: left;
+
+}
+
+/*++++++++++++++++++++++++++++++ Header +++++++++++++++++++++++++++++++++*/
+
+#header{
+	float: left;
+	width: 958px;
+        height: 170px;
+        background: #042944; 
+        margin:1px auto;
+        padding: 2px 0 2px 8px;
+        text-decoration:none;
+        background:url(images/header.jpg) repeat-x;
+}
+
+#header_l {
+
+        float:left;
+        width:400px;height:85px;
+        margin-bottom:10px; padding:0;
+ /*       background-image:url(images/logo.gif);*/
+}
+
+#header_r {
+        float:right;height:91px;width:506px;
+        margin:0; padding:0;
+/*        background-image:url(images/ads-holder.jpg);*/
+}
+
+/*++++++++++++++++++++++++ 468x60 banner zone +++++++++++++++++++++++++++*/
+
+#header_r_ads {
+        margin:2px 0 0 39px; padding:0;
+        width:468px;
+        height:62px;          
+}
+
+/*+++++++++++++++++++++++ Main menu & rss feed ++++++++++++++++++++++++++*/
+
+#nav {
+        clear:both;
+        margin:1px auto 1px auto;
+        width: 966px;
+        height:31px;
+        background: url(images/bg.jpg);
+        overflow:hidden; 
+}
+
+#nav_l {
+        float:left;
+        width:960px;  
+        margin:0px; padding:0px; 
+        overflow:hidden;
+        height:31px; 
+}
+
+.menu {
+        float:left;
+        margin:5px 1px;
+        padding:3px;
+        width:500px;
+}
+	
+.menu li {
+	display: inline;
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
+.menu ul, .menu ol {
+        display: inline;
+	list-style: none;
+	margin:0;
+	padding:0 10px 0 0;
+}
+		
+.menu a, .menu a:visited {
+	color: #FFFFFF;
+	font-weight: bold;
+	margin:0;
+	padding: 3px 10px 3px 10px;
+	text-decoration: none;
+
+}
+		
+.menu a:hover {
+	background: #06558d;
+	text-decoration: none;
+        border:1px solid #fff;
+}
+
+#subscribe {
+        float: right;
+        width:92px;
+        height:32px;
+        margin:4px 4px 3px 4px;
+}
+
+.rss { 
+        float:right;
+        margin:7px 5px 5px 0px;
+        width:230px; 
+}
+
+.rss ul { 
+        margin: 0; padding: 0 2px;
+}
+
+.rss li { 
+        background: url(images/rss.gif) no-repeat 0 3px; 
+        margin: 0 2px 0 0; 
+        padding: 3px 0 3px 20px; 
+        list-style: none; 
+        font-size: 12px; color:#f5153a; 
+        display: inline; font-weight: bold;
+}
+.rss li a {
+        font-size: 12px; color:#fff; 
+}
+
+/*++++++++++++++++++++++++++++++ Search +++++++++++++++++++++++++++++++++*/
+
+#search { 
+        height:14px;
+        float:right;
+        margin:4px 4px 0 0;
+
+}
+#search #s { 
+        font-size:8pt;
+        padding-left:3px;
+        padding-bottom:1px; 
+        width:180px;
+}
+
+input#s { 
+        color:#000;
+        border:3px solid #06558d;
+        background:#fcfcfc;
+}
+
+/*+++++++++++++++++++++++++++ Main Column +++++++++++++++++++++++++++++++*/
+
+#container{
+	float: left;
+	width: 550px;
+        padding: 6px 10px 10px 10px;
+        text-align:justify;
+        background: #fff;
+        margin:0 auto 1px auto;
+}
+
+.post{
+	padding: 2px 6px 10px 6px;
+}
+
+.post h2{
+	font-family: Arial, Georgia, Sans-serif;
+	font-size: 16px;
+        margin:0 5px;
+        text-align:left;
+        text-transform:uppercase;     
+}
+
+.entry{
+
+	font-family: Verdana, Arial, Georgia, Sans-serif;
+	font-size: 10px;
+	line-height: 1.3em;
+	margin: 3px 0 5px 0;
+}
+
+p.postmetadata{
+	margin: 10px 0 0 0;
+        padding:6px;
+        background: #fff;
+}
+
+.navigation{
+	padding: 10px 0 0 0;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 18px;
+}
+
+.navleft{
+        margin:0;padding:0;
+        float:left; 
+}
+
+.navright{
+        margin:0;padding:0;
+        float:right; 
+}
+
+blockquote {
+        margin:5px 10px;
+        padding:4px 7px 10px 7px;
+        font-size:10px;
+        color:#336699;  
+        border:1px dashed #40a9c9;
+        background: #d8eaee url(images/quote.gif) no-repeat 10px 4px;        
+}
+
+blockquote blockquote {
+        margin:5px 10px;
+        padding:4px 7px 10px 7px;
+        font-size:10px;
+        background:#bac9cc; 
+        color:#336699;  
+        border:1px dashed #40a9c9;
+        background: #d8eaee url(images/quote.gif) no-repeat 10px 4px;      
+}
+
+/*+++++++++++++++++++++++++++ Post Header +++++++++++++++++++++++++++++++*/
+
+.post_header {
+        margin:0; padding:0;
+        height:60px;
+        background:#fff;
+}
+
+.post_headerr {
+        margin:0; padding:0;
+
+}
+
+.post_title {
+        margin:0 5px; padding:2px 0 0 0;
+}
+
+.details {
+        margin:0; padding:4px 0;
+        border-top:1px dashed #bc581c;
+}
+
+.files {
+        background:url(images/folder.gif) no-repeat;
+        margin:0; padding:0 0 0 20px;
+}
+
+.comment_list {
+        background:url(images/list_comments.gif) no-repeat;
+        margin:0; padding:0 0 0 20px;
+}
+
+.edit {
+        background:url(images/edit.gif) no-repeat;
+        margin:0; padding:0 0 0 20px;
+}
+
+/*++++++++++++++++++++++++++++ Post Date ++++++++++++++++++++++++++++++++*/
+
+.the_date {
+        display:block;
+        text-align: center;
+        float:left;height:65px;
+        font-family: Arial, Helvetica, sans-serif;
+        width:62px;
+        margin:0px 5px 0 0;
+        background:url(images/calendar.jpg);
+}
+
+.date_m {
+        display:block;
+        font-size: 0.9em;
+        margin:0;
+        padding-top:5px;
+        color:#fff;
+        font-weight: bold;
+        text-align:center;
+}
+
+.date_d {
+        display:block;
+        font-size:1.2em;
+        margin:0;
+        color:#336699;
+        font-weight: bold;
+        padding:0.7em 0 1.1em 0;
+        text-align: center;
+}
+
+/*+++++++++++++++++++++++++++++ Comment +++++++++++++++++++++++++++++++++*/
+
+#commentsbox { 
+        margin: 0px; padding: 0px; 
+        float: left; 
+        width: 540px; 
+        font-size:11px;
+}
+
+#comments h2 { 
+        margin:5px 0 0 0; 
+        padding:0; 
+        color:#ff5c00; 
+        font-size:14px; 
+        font-weight:normal;
+}
+h3 #respond  {
+        margin:10px 0; 
+        padding:0; 
+        color:#ff5c00; 
+        font-size:14px; 
+        font-weight:normal;
+}
+
+.boxcomments { 
+        margin-bottom:20px;
+        width:520px;
+}
+#commentform { 
+        border-top:1px solid #eee;
+        margin:0;padding:15px 15px 1px;
+}
+
+#commentform label { 
+        display:block;
+        margin:0;
+}
+
+#commentform input { 
+        width:170px;
+        margin:0 5px 10px 0;
+        padding:1px;
+}
+
+#commentform textarea { 
+        width:400px;margin:0 0 10px;
+        padding:0;
+        }
+
+#commentform #submit { 
+        margin:0 0 20px;
+}
+
+#commentform p { 
+        margin:5px 0; 
+}
+
+ol.commentlist { 
+        margin:0 0 1px;
+        padding:0;
+}
+
+ol.commentlist li { 
+        border:1px dashed #31afda;
+        display:block;
+        list-style:none;margin:7px 0;
+        padding:6px 15px 12px 15px; 
+        background:url(images/comment_l.jpg) repeat-x;
+}
+
+ol.commentlist li.mycomment { 
+        border-bottom:20px solid #fff; 
+        display:block;
+        list-style:none;
+        margin:7px 0;padding:5px 15px 1px; 
+        background:#f3fdff;
+}
+
+ol.commentlist li.commenthead { 
+        display:block;
+        list-style:none;
+        margin:0;padding:5px 15px;
+}
+
+ol.tblist { 
+        list-style:none;
+        margin:0 0 1px;
+        padding:0;
+}
+ol.tblist li { 
+        display:block;
+        list-style:none;
+        padding:10px 5px 10px 5px;
+        margin:0 0 5px; 
+        border:1px dashed #ccc;
+}
+
+input#url,input#author,input#email,textarea { 
+        color:#666;
+        width:40%;
+        border:1px solid #cbcbcb;
+        margin-bottom:0.6em;
+        background:#fcfcfc;
+        margin-top:2px;padding:3px;
+}
+
+/*++++++++++++++++++++++++++++++ Sidebar +++++++++++++++++++++++++++++++++*/
+
+.sidebar{
+	float: left;
+	width: 386px;
+	margin: 1px 0 0 2px;
+        background:#fff;
+}
+
+.sidebar ul{
+	list-style: none;
+	margin: 0;
+	padding: 0 10px 0 10px;
+}
+
+.sidebar ul li{
+	padding: 10px 0;
+}
+
+.sidebar ul li h2{
+	font-family: Georgia, Sans-serif;
+	font-size: 14px;
+}
+
+.sidebar ul ul li{
+	padding: 0;
+	line-height: 24px;
+}
+
+/*+++++++++++++++++++++++ Sidebar: Top component ++++++++++++++++++++++++++*/
+
+#sidebar_top {
+        margin:6px 0 0 0;padding:8px;
+        background:url(images/bg2.jpg);
+        width: 369px;
+        line-height:12px;
+        text-align:justify;
+        border:1px solid #91d3e9;
+        font-size:10px;
+        font-family:verdana;
+}
+
+#sidebar_top h4 {
+        color:#06558d;
+        margin-bottom:3px;
+        font-size:14px;
+}
+
+/*++++++++++++++++++++++ Sidebar: Left component +++++++++++++++++++++++++*/
+
+.lsidebar {
+        margin:0;padding:0;
+        float:left;
+        width:184px;
+}
+
+.lsidebar ul{
+	list-style: none;
+	margin: 0;
+	padding: 0 1px 0 0;
+
+}
+
+.lsidebar ul li{
+	padding: 10px 0 4px 0;
+	font-family: Arial, Georgia, Sans-serif;
+	font-size: 11px;
+        color:#7a888c;
+	margin:0;
+     
+}
+
+.lsidebar ul li a:link, .lsidebar ul li a:visited {
+        color:#06558d;
+        font-weight:700;
+}
+
+.lsidebar ul li h2{
+	font-family: Verdana,Arial, Georgia, Sans-serif;
+	font-size: 11px;
+        background:url(images/cat.jpg) no-repeat top left;
+        margin:0; padding:7px 0 0 8px;
+        height:30px;width:182px;
+        color:#fff;
+        text-transform:uppercase;
+}
+
+.lsidebar ul ul li{
+	padding: 0 0 0 20px;
+	line-height: 18px;
+	font-family: Arial, Georgia, Sans-serif;
+        background:url(images/arrow_blue.jpg) no-repeat 0px 0px; 
+}
+
+.lsidebar ul ul ul li{
+	padding: 0 0 0 14px;
+	line-height: 18px;
+	font-family: Arial, Georgia, Sans-serif;
+        font-size:11px;
+        background:url(images/sub-cat.jpg) no-repeat 3px 3px;
+}
+
+.lsidebar ul ul ul li a:link, .lsidebar ul ul ul li a:visited {
+        color:#39b0d8;
+        font-weight:700;
+}
+
+/*++++++++++++++++++++++ Sidebar: Right component +++++++++++++++++++++++++*/
+
+.rsidebar {
+        margin:0;padding:0;
+        float:right;
+        width:181px;
+}
+
+.rsidebar ul{
+	list-style: none;
+	margin: 0;
+	padding: 0 1px 0 0;
+}
+
+.rsidebar ul li{
+	padding: 10px 0 4px 0;
+	font-family: Arial, Georgia, Sans-serif;
+	font-size: 11px;
+        color:#7a888c;
+	margin:0;
+}
+
+.rsidebar ul li a:link, .rsidebar ul li a:visited {
+        color:#06558d;
+        font-weight:700;
+}
+
+.rsidebar ul li h2{
+	font-family: Verdana, Arial, Georgia, Sans-serif;
+	font-size: 11px;
+        background:url(images/cat.jpg) no-repeat top left;
+        margin:0; padding:7px 0 0 8px;
+        height:30px;width:182px;
+        color:#fff;
+        text-transform:uppercase;
+}
+.rsidebar ul ul li{
+	padding: 0 0 0 22px;
+	line-height: 18px;
+	font-family: Arial, Georgia, Sans-serif;
+        background:url(images/arrow_blue.jpg) no-repeat 2px 0px; 
+}
+
+.rsidebar ul ul ul li{
+	padding: 0 0 0 14px;
+	line-height: 18px;
+	font-family: Arial, Georgia, Sans-serif;
+        font-size:11px;
+        background:url(images/sub-cat.jpg) no-repeat 3px 3px;
+        border-bottom:none;
+}
+
+.rsidebar ul ul ul li a:link, .rsidebar ul ul ul li a:visited {
+        color:#39b0d8;
+        font-weight:700;
+}
+
+/*+++++++++++++++++++++++++ Sidebar Calendar ++++++++++++++++++++++++++++++*/
+
+table#wp-calendar{
+	width: 90%;
+        margin:0px auto;
+}
+
+/*++++++++++++++++++++++++++++++ Footer +++++++++++++++++++++++++++++++++++*/
+
+#footer{
+	clear: both;
+	width: 966px;
+        background:url(images/bg.jpg);
+        padding:10px 0;
+        margin:0;
+}
+#footer p {
+	line-height: 13px;
+        text-align:center;
+        font-weight:700;
+        color:#fff;
+        padding: 2px 0;
+        font-size: 10px;
+        font-family:Verdana;
+}
+
+#footer a {
+        color:#53c7f2;
+}
+
+#footer a:hover {
+        color:#53c7f2;
+}
