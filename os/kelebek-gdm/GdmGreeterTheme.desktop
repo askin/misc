@@ -1,0 +1,11 @@
+# This is not really a .desktop file like the rest, but it's useful to treat
+# it as such
+
+[GdmGreeterTheme]
+Encoding=UTF-8
+Greeter=kelebekswirl.xml
+Name=Kelebek's GDM Theme
+Description=Theme for GDM. Based on the Pixel Girl Theme by fabiand and based in "Ubuntu Blue Swirl" by darkknight [blue Variant]
+Author=lsdfx, darkknight, fabiand, michaelchan, tigert, kelebek
+Copyright=GPL 2008 LsdFx
+Screenshot=gdm-screenshot.jpg
