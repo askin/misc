@@ -107,7 +107,6 @@ alias ......="cd ../../../../.."
 alias scp-ky="scp $1 kelebekyazilim@zagreb.dreamhost.com:$2"
 #alias lastfm-log="tail -f /var/log/lastfm/lastfm.log | ccze -A"
 
-alias svn="colorsvn"
 #alias diff="colordiff"
 
 export PACKAGE_TEMP_PATH="~/.pisi/package-templates/"
