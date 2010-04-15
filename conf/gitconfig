@@ -2,7 +2,8 @@
     name = Aşkın Yollu
     email = askin@askin.ws
 [alias]
-    stat = status
+    stat = ls-files --exclude-per-directory=.gitignore --exclude-from=.git/info/exclude --others --modified -t
+    co   = checkout
 [color]
     brach = auto
     diff = auto
