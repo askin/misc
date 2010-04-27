@@ -18,9 +18,18 @@
  '(highlight ((t (:background "gray20"))))
  '(region ((t (:background "gray40")))))
 
-; speedbar is cool
+;; speedbar is cool
 (global-set-key (kbd "C-c s") 'speedbar)
 
+;; Disable Ctrl Z
+(global-set-key (kbd "C-z") nil)
+
+;; C indent with 4 space
+(setq c-default-style "bsd"
+      c-basic-offset 4)
+
+;; Shell Mode
+(add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
 
 ;; python-mode-hook
 ;; no tabs only spaces
@@ -36,13 +45,11 @@
 	  (lambda ()
 	    (setq indent-tabs-mode nil)))
 
-
-
 (setq frame-title-format "%b (%m)")	; descriptive frame title "filename (mode)"
 
 
-;;for cc-mode
-;;C++, Objective-C, Java, CORBA's IDL, Pike, and AWK
+;; for cc-mode
+;; C++, Objective-C, Java, CORBA's IDL, Pike, and AWK
 (autoload 'awk-mode "cc-mode" nil t)
 
 ;; for muse
@@ -82,3 +89,13 @@
 
 ;; for pardus
 (pardus-auto-load-all)
+
+;; Indentation
+(setq standart-indent 4)
+(setq-default indent-tabs-mode nil)
+
+(require 'vc-git)
+(when (featurep 'vc-git) (add-to-list 'vc-handled-backends 'git))
+(require 'git)
+(autoload 'git-blame-mode "git-blame"
+  "Minor mode for incremental blame for Git." t)
