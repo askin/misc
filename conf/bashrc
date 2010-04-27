@@ -94,6 +94,9 @@ alias nocaps="setxkbmap -option ctrl:nocaps"
 alias caps="setxkbmap -option -option capslock:caps"
 alias ssh-ay="ssh askinyollu@zagreb.dreamhost.com"
 alias m='more'
+alias t='thunar'
+alias g='grep'
+alias mmplayer='mplayer'
 
 alias .="cd .."
 alias ..="cd ../.."
