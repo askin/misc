@@ -1,0 +1,1457 @@
+# Danish translations for PasswordManager package
+# Danske oversÃ¦ttelser for pakke PasswordManager.
+# Copyright (C) 2004 THE PasswordManager'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PasswordManager package.
+#  <fjord@diku.dk>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PasswordManager 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-03-14 23:43+0900\n"
+"PO-Revision-Date: 2010-05-03 23:03+0200\n"
+"Last-Translator: Aşkın Yollu <askin@askin.ws>\n"
+"Language-Team: Danish <dansk@klid.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../lib/attribute-list.c:97
+msgid "List"
+msgstr "Liste"
+
+#: ../lib/attribute-list.c:98
+msgid "The pointer of attribute GList"
+msgstr ""
+
+#: ../lib/attribute-list.c:102
+msgid "Attribute"
+msgstr ""
+
+#: ../lib/attribute-list.c:103
+#: ../src/attribute-widgets.c:136
+msgid "The object of GPassAttribute"
+msgstr ""
+
+#: ../lib/attribute-list.c:137
+msgid "end of cursor"
+msgstr ""
+
+#: ../lib/attribute-list.c:226
+msgid "attribute name is empty"
+msgstr ""
+
+#: ../lib/attribute-list.c:230
+#, c-format
+msgid "already appended attribute: %s"
+msgstr ""
+
+#: ../lib/attribute-list.c:327
+#: ../lib/pack.c:75
+#: ../lib/pack.c:113
+msgid "buffer is too short"
+msgstr "tampon çok kısa"
+
+#: ../lib/attribute.c:43
+msgid "Invalid"
+msgstr "Geçersiz"
+
+#: ../lib/attribute.c:45
+msgid "Integer"
+msgstr "Tamsayı"
+
+#: ../lib/attribute.c:47
+msgid "Boolean"
+msgstr "Mantıksal"
+
+#: ../lib/attribute.c:49
+msgid "Time"
+msgstr "Zaman"
+
+#: ../lib/attribute.c:51
+msgid "String"
+msgstr ""
+
+#: ../lib/attribute.c:53
+msgid "Text"
+msgstr "Metin"
+
+#: ../lib/attribute.c:55
+#: ../lib/password.c:228
+#: ../lib/password.c:229
+#: ../src/password-generator.c:106
+msgid "Password"
+msgstr ""
+
+#: ../lib/attribute.c:57
+msgid "Url"
+msgstr "Url"
+
+#: ../lib/attribute.c:59
+msgid "Entry Type"
+msgstr ""
+
+#: ../lib/attribute.c:215
+#: ../lib/entry-factory.c:248
+#: ../lib/entry.c:345
+#: ../src/attribute-editor.c:241
+#: ../src/preferences.c:181
+msgid "Type"
+msgstr "Tip"
+
+#: ../lib/attribute.c:215
+msgid "The type of attribute"
+msgstr ""
+
+#: ../lib/attribute.c:221
+#: ../lib/entry.c:350
+#: ../src/entry-tree.c:161
+msgid "Name"
+msgstr "İsim"
+
+#: ../lib/attribute.c:221
+msgid "The name of attribute"
+msgstr ""
+
+#: ../lib/attribute.c:225
+#: ../lib/entry-factory.c:253
+msgid "Nickname"
+msgstr "Takmaad"
+
+#: ../lib/attribute.c:226
+msgid "The nickname of attribute"
+msgstr ""
+
+#: ../lib/attribute.c:230
+msgid "Blurb"
+msgstr ""
+
+#: ../lib/attribute.c:231
+msgid "The blurb of attribute"
+msgstr ""
+
+#: ../lib/attribute.c:343
+#: ../lib/attribute.c:389
+#, c-format
+msgid "%s(%d) unsupported dumping"
+msgstr ""
+
+#: ../lib/configuration.c:398
+msgid "GConfClient"
+msgstr ""
+
+#: ../lib/configuration.c:399
+msgid "The pointer of GConfClient object"
+msgstr ""
+
+#: ../lib/configuration.c:403
+#: ../data/gpass.schemas.in.h:29
+msgid "Window x coordinate"
+msgstr "Pencere x koorinatı"
+
+#: ../lib/configuration.c:404
+#: ../data/gpass.schemas.in.h:18
+msgid "The x coordinate of main window"
+msgstr ""
+
+#: ../lib/configuration.c:408
+#: ../data/gpass.schemas.in.h:30
+msgid "Window y coordinate"
+msgstr ""
+
+#: ../lib/configuration.c:409
+#: ../data/gpass.schemas.in.h:19
+msgid "The y coordinate of main window"
+msgstr ""
+
+#: ../lib/configuration.c:413
+#: ../data/gpass.schemas.in.h:28
+msgid "Window width"
+msgstr "Pencere genişliği"
+
+#: ../lib/configuration.c:414
+#: ../data/gpass.schemas.in.h:17
+msgid "The width of main window"
+msgstr "Ana pencerenin genişliği"
+
+#: ../lib/configuration.c:418
+#: ../data/gpass.schemas.in.h:27
+msgid "Window height"
+msgstr "Pencere yüksekliği"
+
+#: ../lib/configuration.c:419
+#: ../data/gpass.schemas.in.h:11
+msgid "The height of main window"
+msgstr "Ana pencerenin yüksekliği"
+
+#: ../lib/configuration.c:423
+#: ../data/gpass.schemas.in.h:20
+msgid "Toolbar visible"
+msgstr ""
+
+#: ../lib/configuration.c:424
+#: ../data/gpass.schemas.in.h:26
+msgid "Whether visible toolbar"
+msgstr ""
+
+#: ../lib/configuration.c:428
+#: ../data/gpass.schemas.in.h:10
+msgid "Statusbar visible"
+msgstr ""
+
+#: ../lib/configuration.c:429
+#: ../data/gpass.schemas.in.h:25
+msgid "Whether visible statusbar"
+msgstr ""
+
+#: ../lib/configuration.c:433
+#: ../data/gpass.schemas.in.h:7
+msgid "Pane width"
+msgstr ""
+
+#: ../lib/configuration.c:434
+#: ../data/gpass.schemas.in.h:16
+msgid "The width of entries tree pane"
+msgstr ""
+
+#: ../lib/configuration.c:438
+#: ../data/gpass.schemas.in.h:21
+msgid "Undo levels"
+msgstr ""
+
+#: ../lib/configuration.c:439
+#: ../data/gpass.schemas.in.h:15
+msgid "The number of undo levels"
+msgstr ""
+
+#: ../lib/configuration.c:443
+#: ../data/preferences.glade.h:10
+#: ../data/gpass.schemas.in.h:22
+msgid "Visible secrets"
+msgstr ""
+
+#: ../lib/configuration.c:444
+#: ../data/gpass.schemas.in.h:24
+msgid "Whether visible secrets at some entry and summary"
+msgstr ""
+
+#: ../lib/configuration.c:449
+msgid "Lock"
+msgstr "Kilit"
+
+#: ../lib/configuration.c:450
+#: ../data/gpass.schemas.in.h:23
+msgid "Whether automatically lock the main window after a period of inactivity"
+msgstr ""
+
+#: ../lib/configuration.c:455
+msgid "Lock timeout"
+msgstr ""
+
+#: ../lib/configuration.c:456
+#: ../data/gpass.schemas.in.h:14
+msgid "The number of minutes of inactivity before the main window is automatically locked."
+msgstr ""
+
+#: ../lib/crypt-stream.c:79
+msgid "failed mhash_init()"
+msgstr ""
+
+#: ../lib/crypt-stream.c:99
+msgid "failed mcrypt_module_open()"
+msgstr ""
+
+#: ../lib/crypt-stream.c:104
+#, c-format
+msgid "IV size != 8: %d"
+msgstr ""
+
+#: ../lib/crypt-stream.c:110
+#, c-format
+msgid "failed mcrypt_generic_init(): %s"
+msgstr ""
+
+#: ../lib/crypt-stream.c:271
+msgid "failed mdecrypt_generic()"
+msgstr ""
+
+#: ../lib/crypt-stream.c:296
+#: ../lib/crypt-stream.c:336
+#: ../lib/file.c:188
+#: ../lib/file.c:201
+#: ../lib/file04.c:182
+#: ../lib/file04.c:500
+#: ../lib/file04.c:570
+msgid "Premature end of file"
+msgstr ""
+
+#: ../lib/crypt-stream.c:477
+msgid "failed mcrypt_generic()"
+msgstr ""
+
+#: ../lib/entry-factory.c:231
+#: ../lib/file.c:616
+#: ../lib/file04.c:439
+msgid "GPassEntryFactory"
+msgstr ""
+
+#: ../lib/entry-factory.c:232
+msgid "The pointer of GPassEntryFactory"
+msgstr ""
+
+#: ../lib/entry-factory.c:236
+msgid "Index"
+msgstr ""
+
+#: ../lib/entry-factory.c:237
+msgid "The index of cursor"
+msgstr ""
+
+#: ../lib/entry-factory.c:242
+msgid "Max index"
+msgstr ""
+
+#: ../lib/entry-factory.c:243
+msgid "The maximum index of cursor"
+msgstr ""
+
+#: ../lib/entry-factory.c:249
+msgid "The type of GPassEntry subclass"
+msgstr ""
+
+#: ../lib/entry-factory.c:254
+msgid "The nickname of GPassEntry subclass"
+msgstr ""
+
+#: ../lib/entry-factory.c:258
+#: ../src/preferences.c:188
+msgid "Launcher"
+msgstr ""
+
+#: ../lib/entry-factory.c:259
+msgid "The launcher of GPassEntry subclass"
+msgstr ""
+
+#: ../lib/entry-factory.c:263
+msgid "Icon ID"
+msgstr ""
+
+#: ../lib/entry-factory.c:264
+msgid "The identifier of icon"
+msgstr ""
+
+#: ../lib/entry-factory.c:268
+msgid "Can have child"
+msgstr ""
+
+#: ../lib/entry-factory.c:269
+msgid "Wether entry can have child"
+msgstr ""
+
+#: ../lib/entry-factory.c:273
+msgid "GPassEntryClass"
+msgstr ""
+
+#: ../lib/entry-factory.c:274
+msgid "The pointer of GPassEntry subclass"
+msgstr ""
+
+#: ../lib/entry-factory.c:431
+#, c-format
+msgid "No such password type: %s\n"
+msgstr ""
+
+#: ../lib/entry.c:346
+#: ../src/attribute-editor.c:242
+msgid "The entry type"
+msgstr ""
+
+#: ../lib/entry.c:351
+msgid "The name of entry"
+msgstr ""
+
+#: ../lib/entry.c:355
+#: ../lib/entry.c:356
+#: ../src/command.c:135
+msgid "Description"
+msgstr ""
+
+#: ../lib/entry.c:360
+msgid "Creation Time"
+msgstr ""
+
+#: ../lib/entry.c:361
+msgid "The creation time of entry"
+msgstr ""
+
+#: ../lib/entry.c:366
+msgid "Modification Time"
+msgstr ""
+
+#: ../lib/entry.c:367
+msgid "The modification time of entry"
+msgstr ""
+
+#: ../lib/entry.c:372
+msgid "Expiration"
+msgstr ""
+
+#: ../lib/entry.c:373
+msgid "Whether it expires it or not?"
+msgstr ""
+
+#: ../lib/entry.c:377
+msgid "Expiration Time"
+msgstr ""
+
+#: ../lib/entry.c:378
+msgid "The expiration time of entry"
+msgstr ""
+
+#: ../lib/entry.c:383
+msgid "ID"
+msgstr ""
+
+#: ../lib/entry.c:383
+msgid "The ID of entry"
+msgstr ""
+
+#: ../lib/file-100.c:45
+#: ../lib/file-100.c:71
+#: ../lib/file-100.c:121
+#: ../lib/file.c:493
+#: ../lib/file.c:519
+#: ../lib/file.c:568
+msgid "data is too short"
+msgstr ""
+
+#: ../lib/file-100.c:141
+#: ../lib/file.c:580
+msgid "invalid data"
+msgstr ""
+
+#: ../lib/file.c:129
+#: ../lib/file04.c:123
+msgid "Path"
+msgstr ""
+
+#: ../lib/file.c:130
+msgid "The path of stored password collection file"
+msgstr ""
+
+#: ../lib/file.c:134
+#: ../lib/file04.c:128
+msgid "Master password"
+msgstr ""
+
+#: ../lib/file.c:135
+#: ../lib/file04.c:129
+msgid "The master password"
+msgstr ""
+
+#: ../lib/file.c:192
+#: ../lib/file04.c:186
+#: ../src/authentication.c:77
+#: ../src/change-master-password.c:77
+#: ../src/intergradation.c:119
+#: ../src/lock.c:70
+msgid "Incorrect password!"
+msgstr ""
+
+#: ../lib/file.c:325
+#: ../lib/file.c:402
+#, c-format
+msgid "not support version: %s"
+msgstr ""
+
+#: ../lib/file.c:610
+#: ../lib/file04.c:433
+msgid "GPassDecryptStream"
+msgstr ""
+
+#: ../lib/file.c:611
+#: ../lib/file04.c:434
+msgid "The object of GPassDecryptStream"
+msgstr ""
+
+#: ../lib/file.c:617
+#: ../lib/file04.c:440
+msgid "The object of GPassEntryFactory"
+msgstr ""
+
+#: ../lib/file.c:672
+#, c-format
+msgid "could not find parent entry: id=%d parent_id=%d type=%s name=%s"
+msgstr ""
+
+#: ../lib/file.c:813
+#: ../lib/file04.c:661
+msgid "GPassEncryptStream"
+msgstr ""
+
+#: ../lib/file.c:814
+#: ../lib/file04.c:662
+msgid "The object of GPassEncryptStream"
+msgstr ""
+
+#: ../lib/file04.c:124
+msgid "The path of db"
+msgstr ""
+
+#: ../lib/file04.c:482
+msgid "Password file corrupted!"
+msgstr ""
+
+#: ../lib/folder.c:32
+#: ../tests/gpass/folder-test.c:87
+msgid "Folder"
+msgstr ""
+
+#: ../lib/general-password.c:91
+#: ../tests/gpass/general-password-test.c:87
+msgid "General"
+msgstr ""
+
+#: ../lib/general-password.c:198
+#: ../lib/general-password.c:199
+msgid "Hostname"
+msgstr ""
+
+#: ../lib/pack.c:78
+msgid "invalid buffer"
+msgstr ""
+
+#: ../lib/password.c:223
+#: ../lib/password.c:224
+msgid "Username"
+msgstr ""
+
+#: ../lib/password.c:271
+msgid "Random"
+msgstr ""
+
+#: ../lib/password.c:298
+msgid "could not open random device"
+msgstr ""
+
+#: ../lib/password.c:306
+msgid "could not read random device"
+msgstr ""
+
+#: ../lib/password.c:327
+msgid "must set length"
+msgstr ""
+
+#: ../lib/password.c:331
+#: ../lib/password.c:348
+msgid "must set use_flags"
+msgstr ""
+
+#: ../lib/password.c:357
+#, c-format
+msgid "not supported password generate type: %d"
+msgstr ""
+
+#: ../lib/root-entry.c:33
+#: ../tests/gpass/root-entry-test.c:73
+msgid "Root"
+msgstr ""
+
+#: ../src/attribute-widgets.c:135
+msgid "GPassAttribute"
+msgstr ""
+
+#: ../src/attribute-widgets.c:487
+#: ../src/summary.c:136
+#: ../tools/gpass-convert.c:183
+#: ../tools/gpass-convert.c:184
+msgid "Yes"
+msgstr ""
+
+#: ../src/attribute-widgets.c:490
+#: ../src/summary.c:136
+#: ../tools/gpass-convert.c:183
+#: ../tools/gpass-convert.c:184
+msgid "No"
+msgstr ""
+
+#: ../src/attribute-widgets.c:935
+#: ../data/password-generator.glade.h:12
+msgid "_Generate"
+msgstr ""
+
+#: ../src/change-master-password.c:81
+#: ../src/welcome.c:84
+msgid "Empty passwords not allowed!"
+msgstr ""
+
+#: ../src/change-master-password.c:85
+#: ../src/welcome.c:90
+msgid "The entered passwords do not match!"
+msgstr ""
+
+#: ../src/command.c:130
+msgid "GPassApplication"
+msgstr ""
+
+#: ../src/command.c:131
+msgid "The pointer to GPassApplication"
+msgstr ""
+
+#: ../src/command.c:136
+msgid "The description of command"
+msgstr ""
+
+#: ../src/command.c:418
+msgid "Max depth"
+msgstr ""
+
+#: ../src/command.c:419
+msgid "The max depth of command stack"
+msgstr ""
+
+#: ../src/command.c:696
+#, c-format
+msgid "Edit %s"
+msgstr ""
+
+#: ../src/command.c:993
+#, c-format
+msgid "Move %s"
+msgstr ""
+
+#: ../src/entry-tree.c:156
+msgid "Icon"
+msgstr ""
+
+#: ../src/entry-tree.c:405
+#, c-format
+msgid "Removed `%s'."
+msgstr ""
+
+#: ../src/entry-tree.c:445
+#, c-format
+msgid "Moved `%s'."
+msgstr ""
+
+#: ../src/intergradation.c:125
+#, c-format
+msgid "failed reading passwords: %s"
+msgstr ""
+
+#: ../src/intergradation.c:138
+#, c-format
+msgid "failed creating: %s"
+msgstr ""
+
+#: ../src/intergradation.c:149
+#, c-format
+msgid "failed opening: %s"
+msgstr ""
+
+#: ../src/intergradation.c:160
+#, c-format
+msgid "failed writing: %s"
+msgstr ""
+
+#: ../src/lock.c:97
+msgid "Password collection is changed!"
+msgstr ""
+
+#: ../src/password-generator.c:107
+msgid "The generated password"
+msgstr ""
+
+#: ../src/summary.c:48
+msgid "A simple password manager for GNOME 2\n"
+msgstr ""
+
+#: ../src/summary.c:53
+msgid ""
+"GPass is a simple GNOME application, released under the GNU GPL licence, that lets you manage a collection of passwords.\n"
+"\n"
+" The password collection is stored in an encrypted file, protected by a master-password.\n"
+msgstr ""
+
+#: ../src/summary.c:220
+msgid "<no name>"
+msgstr ""
+
+#: ../src/summary.c:229
+msgid "<no description>"
+msgstr ""
+
+#: ../src/view-factory.c:128
+#: ../src/view-factory.c:151
+#, c-format
+msgid "No such template: %s\n"
+msgstr ""
+
+#: ../src/view.c:92
+#, c-format
+msgid "Could not find template: %s"
+msgstr ""
+
+#: ../src/view.c:97
+#, c-format
+msgid "Could not find widget: %s in %s"
+msgstr ""
+
+#: ../src/view.c:203
+msgid "Model"
+msgstr ""
+
+#: ../src/view.c:204
+msgid "The data model"
+msgstr ""
+
+#: ../src/view.c:207
+msgid "Template"
+msgstr ""
+
+#: ../src/view.c:208
+msgid "The name of template"
+msgstr ""
+
+#: ../src/view.c:259
+msgid "could not get glade xml"
+msgstr ""
+
+#: ../src/view.c:264
+msgid "could not get self"
+msgstr ""
+
+#: ../src/window.c:465
+msgid "ID/password retrieved from clipboard by another application."
+msgstr ""
+
+#: ../src/window.c:573
+msgid "Password collection saved."
+msgstr ""
+
+#: ../src/window.c:576
+msgid "No changed the password collection."
+msgstr ""
+
+#: ../src/window.c:617
+msgid "Changed the master password."
+msgstr ""
+
+#: ../src/window.c:755
+#, c-format
+msgid "Edited `%s'."
+msgstr ""
+
+#: ../src/window.c:805
+#, c-format
+msgid "Add %s"
+msgstr ""
+
+#: ../src/window.c:807
+#, c-format
+msgid "Added `%s'."
+msgstr ""
+
+#: ../src/window.c:833
+#, c-format
+msgid "Remove %s"
+msgstr ""
+
+#: ../src/window.c:871
+#, c-format
+msgid "Undo `%s'."
+msgstr ""
+
+#: ../src/window.c:897
+#, c-format
+msgid "Redo `%s'."
+msgstr ""
+
+#: ../src/window.c:935
+#, c-format
+msgid "Executed `%s'."
+msgstr ""
+
+#: ../src/window.c:938
+#, c-format
+msgid "Failed executing `%s': %s"
+msgstr ""
+
+#: ../src/window.c:950
+#, c-format
+msgid "No goto command for `%s'."
+msgstr ""
+
+#: ../src/window.c:989
+#, c-format
+msgid "Password for '%s' copied to clipboard."
+msgstr ""
+
+#: ../src/window.c:1014
+#, c-format
+msgid "ID for '%s' copied to clipboard."
+msgstr ""
+
+#: ../src/window.c:1046
+#, c-format
+msgid "ID/Password for '%s' copied to clipboard."
+msgstr ""
+
+#: ../src/window.c:1070
+#, c-format
+msgid "Copied `%s'."
+msgstr ""
+
+#: ../src/window.c:1092
+#, c-format
+msgid "Cut %s"
+msgstr ""
+
+#: ../src/window.c:1094
+#, c-format
+msgid "Cutted `%s'."
+msgstr ""
+
+#: ../src/window.c:1129
+#, c-format
+msgid "Paste %s"
+msgstr ""
+
+#: ../src/window.c:1131
+#, c-format
+msgid "Pasted `%s'."
+msgstr ""
+
+#: ../src/window.c:1160
+msgid "Modified preferences."
+msgstr ""
+
+#: ../src/window.c:1180
+msgid "Show the toolbar."
+msgstr ""
+
+#: ../src/window.c:1184
+msgid "Hide the toolbar."
+msgstr ""
+
+#: ../src/window.c:1203
+msgid "Show the statusbar."
+msgstr ""
+
+#: ../src/window.c:1207
+msgid "Hide the statusbar."
+msgstr ""
+
+#: ../src/window.c:1219
+msgid "Morten Fjord-Larsen"
+msgstr ""
+
+#: ../src/window.c:1220
+msgid "Kouji TAKAO"
+msgstr ""
+
+#: ../src/window.c:1232
+msgid "Translator"
+msgstr ""
+
+#: ../src/window.c:1236
+msgid "Put your translator here."
+msgstr ""
+
+#: ../src/window.c:1244
+#: ../data/window.glade.h:10
+msgid "GPass"
+msgstr ""
+
+#: ../src/window.c:1247
+msgid "A simple password manager for the GNOME desktop"
+msgstr ""
+
+#: ../src/main.c:93
+msgid "One instance of GPass is already running."
+msgstr ""
+
+#: ../src/main.c:105
+#: ../data/gpass.desktop.in.in.h:2
+msgid "Password Manager"
+msgstr "Parola Yöneticisi"
+
+#: ../tools/gpass-convert.c:175
+#, c-format
+msgid "%-15s %-5s %-5s\n"
+msgstr ""
+
+#: ../tools/gpass-convert.c:177
+msgid "Version"
+msgstr ""
+
+#: ../tools/gpass-convert.c:177
+msgid "Read"
+msgstr ""
+
+#: ../tools/gpass-convert.c:177
+msgid "Write"
+msgstr ""
+
+#: ../tools/gpass-convert.c:200
+msgid "could not run stty\n"
+msgstr ""
+
+#: ../tools/gpass-convert.c:229
+msgid "version of convert from"
+msgstr ""
+
+#: ../tools/gpass-convert.c:231
+msgid "version of convert to"
+msgstr ""
+
+#: ../tools/gpass-convert.c:233
+msgid "list all supported versions"
+msgstr ""
+
+#: ../tools/gpass-convert.c:235
+msgid "no progress indicator"
+msgstr ""
+
+#: ../tools/gpass-convert.c:249
+msgid ""
+"<from> <to>\n"
+"file format converter for GPass"
+msgstr ""
+
+#: ../tools/gpass-convert.c:263
+#, c-format
+msgid "invalid argument\n"
+msgstr ""
+
+#: ../tools/gpass-convert.c:272
+#, c-format
+msgid "not supports for read: %s\n"
+msgstr ""
+
+#: ../tools/gpass-convert.c:277
+#, c-format
+msgid "not supports for write: %s\n"
+msgstr ""
+
+#: ../tools/gpass-convert.c:281
+#, c-format
+msgid "not exist for read: %s\n"
+msgstr ""
+
+#: ../tools/gpass-convert.c:285
+#, c-format
+msgid "already exist for write: %s\n"
+msgstr ""
+
+#: ../tools/gpass-convert.c:293
+#, c-format
+msgid "reading %s(version %s)... "
+msgstr ""
+
+#: ../tools/gpass-convert.c:302
+#: ../tools/gpass-convert.c:311
+#, c-format
+msgid "done\n"
+msgstr ""
+
+#: ../tools/gpass-convert.c:303
+#, c-format
+msgid "writing %s(version %s)... "
+msgstr ""
+
+#: ../data/attribute-editor.glade.h:1
+msgid "Attribute Editor"
+msgstr ""
+
+#: ../data/authentication.glade.h:1
+msgid "<b>Please enter the master password</b>"
+msgstr ""
+
+#: ../data/authentication.glade.h:2
+msgid "Authentication"
+msgstr ""
+
+#: ../data/authentication.glade.h:3
+#: ../data/intergradation.glade.h:10
+#: ../data/password-generator.glade.h:7
+#: ../data/welcome.glade.h:10
+msgid "Password:"
+msgstr ""
+
+#: ../data/authentication.glade.h:4
+msgid "_Authenticate"
+msgstr ""
+
+#: ../data/change-master-password.glade.h:1
+msgid "    "
+msgstr ""
+
+#: ../data/change-master-password.glade.h:2
+#: ../data/window.glade.h:2
+msgid "Change the master password"
+msgstr ""
+
+#: ../data/change-master-password.glade.h:3
+msgid "Current password"
+msgstr ""
+
+#: ../data/change-master-password.glade.h:4
+msgid "Entries the current master password"
+msgstr ""
+
+#: ../data/change-master-password.glade.h:5
+msgid "Entries the new master password"
+msgstr ""
+
+#: ../data/change-master-password.glade.h:6
+msgid "Entries the verify new master password"
+msgstr ""
+
+#: ../data/change-master-password.glade.h:7
+msgid ""
+"Here you can change the master password that protects your password collection. For security reasons, you are asked to enter the old password.\n"
+"\n"
+"<b>It is vital that you remember this password. Without it, you cannot access the password collection.</b>"
+msgstr ""
+
+#: ../data/change-master-password.glade.h:10
+msgid "New password"
+msgstr "Yeni parola"
+
+#: ../data/change-master-password.glade.h:11
+msgid "Verify new password"
+msgstr "Yeni parolayı doğrula"
+
+#: ../data/confirm-quit.glade.h:1
+msgid ""
+"<b>Save changes to your password collection?</b>\n"
+"\n"
+"If you close without saving, your changes will be lost."
+msgstr ""
+
+#: ../data/confirm-quit.glade.h:4
+msgid "Discard"
+msgstr "Yoksay"
+
+#: ../data/confirm-quit.glade.h:5
+msgid "_Save changes"
+msgstr "Değişiklikleri _kaydet"
+
+#: ../data/intergradation.glade.h:1
+msgid ""
+"Found your password collection in ~/.gpass/gpass.dat. The password collection file format was changed since version 0.5.0.\n"
+"\n"
+"Intergradate it now?\n"
+"(Cancel to create new password collection.)\n"
+"----------\n"
+"This appears to be the first time you run the GPass.\n"
+msgstr ""
+
+#: ../data/intergradation.glade.h:8
+msgid "Intergradation"
+msgstr ""
+
+#: ../data/intergradation.glade.h:9
+msgid "Intergradation from GPass-0.4"
+msgstr ""
+
+#: ../data/intergradation.glade.h:11
+msgid "Please enter a master password."
+msgstr ""
+
+#: ../data/intergradation.glade.h:12
+msgid "Succeeded intergradation"
+msgstr ""
+
+#: ../data/intergradation.glade.h:13
+msgid "The intergraded password collection is stored in the file .gpass/passwords.gps in your home directory."
+msgstr ""
+
+#: ../data/lock.glade.h:1
+msgid "<b>GNOME Password Manager</b>"
+msgstr ""
+
+#: ../data/lock.glade.h:2
+msgid "Enter master password to unlock."
+msgstr ""
+
+#: ../data/lock.glade.h:3
+msgid "Lock Screen"
+msgstr ""
+
+#: ../data/password-generator.glade.h:1
+msgid "<b>Generation of password</b>"
+msgstr ""
+
+#: ../data/password-generator.glade.h:2
+msgid "<b>Use character</b>"
+msgstr ""
+
+#: ../data/password-generator.glade.h:3
+msgid "Length:"
+msgstr ""
+
+#: ../data/password-generator.glade.h:4
+msgid "Lowercase letters (a...z)"
+msgstr ""
+
+#: ../data/password-generator.glade.h:5
+msgid "Numbers (0...9)"
+msgstr ""
+
+#: ../data/password-generator.glade.h:6
+#, fuzzy
+msgid "Password Generator"
+msgstr "Parola Oluşturucu"
+
+#: ../data/password-generator.glade.h:9
+#, no-c-format
+msgid "Special characters (%, $, ^ etc.)"
+msgstr ""
+
+#: ../data/password-generator.glade.h:10
+msgid "Type:"
+msgstr ""
+
+#: ../data/password-generator.glade.h:11
+msgid "Uppercase letters (A...Z)"
+msgstr ""
+
+#: ../data/preferences.glade.h:1
+msgid "<b>Lock</b>"
+msgstr ""
+
+#: ../data/preferences.glade.h:2
+msgid "<b>Resource</b>"
+msgstr ""
+
+#: ../data/preferences.glade.h:3
+msgid "<b>Secrets</b>"
+msgstr ""
+
+#: ../data/preferences.glade.h:4
+msgid "Automatically lock"
+msgstr ""
+
+#: ../data/preferences.glade.h:5
+#, fuzzy
+msgid "Environment"
+msgstr "Ortam"
+
+#: ../data/preferences.glade.h:6
+msgid "Launchers"
+msgstr "Başlatıcılar"
+
+#: ../data/preferences.glade.h:7
+msgid "Lock after (minutes):"
+msgstr ""
+
+#: ../data/preferences.glade.h:8
+msgid "Number of undo levels:"
+msgstr ""
+
+#: ../data/preferences.glade.h:9
+msgid "Preferences"
+msgstr "Ayarlar"
+
+#: ../data/welcome.glade.h:1
+msgid "Finished"
+msgstr "Tamamlandı"
+
+#: ../data/welcome.glade.h:2
+msgid ""
+"GPass is a simple GNOME application, released under the GNU GPL licence, that lets you manage a collection of passwords.\n"
+"\n"
+"The password collection is stored in an encrypted file, protected by a master-password.\n"
+"\n"
+"----------\n"
+"This appears to be the first time you run the GPass.\n"
+msgstr ""
+
+#: ../data/welcome.glade.h:9
+msgid "Master Password"
+msgstr ""
+
+#: ../data/welcome.glade.h:11
+msgid "Please enter a master password. This password will be used to encrypt your password collection. "
+msgstr ""
+
+#: ../data/welcome.glade.h:12
+msgid ""
+"The password collection is stored in the file .gpass/passwords.gps in your home directory.\n"
+"\n"
+"It is vital that you remember this password. Without it, you cannot access the password collection."
+msgstr ""
+
+#: ../data/welcome.glade.h:15
+msgid "Verify:"
+msgstr "Doğrula:"
+
+#: ../data/welcome.glade.h:16
+msgid "Welcome to GPass"
+msgstr "GPass'a Hoş Geldiniz"
+
+#: ../data/window.glade.h:1
+msgid "Add new password"
+msgstr "Yeni parola ekle"
+
+#: ../data/window.glade.h:3
+msgid "Copy _Both"
+msgstr "_İkisini de Kopyala"
+
+#: ../data/window.glade.h:4
+msgid "Copy _ID"
+msgstr "_ID'yi Kopyala"
+
+#: ../data/window.glade.h:5
+msgid "Copy _Password"
+msgstr "Parolayı _kopyala"
+
+#: ../data/window.glade.h:6
+msgid "Copy password to clipboard"
+msgstr "Parolayı kopyala"
+
+#: ../data/window.glade.h:7
+msgid "Copy username to clipboard"
+msgstr "Kullanıcı adını kopyala"
+
+#: ../data/window.glade.h:8
+msgid "Edit the selected password"
+msgstr "Seçişi parolayı düzenle"
+
+#: ../data/window.glade.h:9
+msgid "Execute command"
+msgstr "Komut çalıştır"
+
+#: ../data/window.glade.h:11
+msgid "Open the URL associated with the password"
+msgstr ""
+
+#: ../data/window.glade.h:12
+msgid "Queue username and password on clipboard"
+msgstr ""
+
+#: ../data/window.glade.h:13
+msgid "Remove the selected password"
+msgstr "Seçili parolayı sil"
+
+#: ../data/window.glade.h:14
+msgid "Save passwords"
+msgstr "Parolaları kaydet"
+
+#: ../data/window.glade.h:15
+msgid "_Add"
+msgstr "_Ekle"
+
+#: ../data/window.glade.h:16
+msgid "_Change password..."
+msgstr "_Parolayı değiştir..."
+
+#: ../data/window.glade.h:17
+msgid "_Edit..."
+msgstr "_Düzenle"
+
+#: ../data/window.glade.h:18
+msgid "_Run"
+msgstr "_Çalıştır"
+
+#: ../data/window.glade.h:19
+msgid "_Statusbar"
+msgstr "_Durum çubuğu"
+
+#: ../data/window.glade.h:20
+msgid "_Toolbar"
+msgstr "_Araç çubuğu"
+
+#: ../data/window.glade.h:21
+msgid "_Unlink"
+msgstr ""
+
+#: ../data/gpass.desktop.in.in.h:1
+msgid "Manages your password collection"
+msgstr ""
+
+#: ../data/gpass.schemas.in.h:1
+msgid "15"
+msgstr "15"
+
+#: ../data/gpass.schemas.in.h:2
+msgid "250"
+msgstr "250"
+
+#: ../data/gpass.schemas.in.h:3
+msgid "300"
+msgstr "300"
+
+#: ../data/gpass.schemas.in.h:4
+msgid "500"
+msgstr "500"
+
+#: ../data/gpass.schemas.in.h:5
+msgid "Launcher for folder"
+msgstr ""
+
+#: ../data/gpass.schemas.in.h:6
+msgid "Launcher for general"
+msgstr ""
+
+#: ../data/gpass.schemas.in.h:8
+msgid "Screen lock"
+msgstr ""
+
+#: ../data/gpass.schemas.in.h:9
+msgid "Screen lock timeout"
+msgstr ""
+
+#: ../data/gpass.schemas.in.h:12
+msgid "The launcher command for folder"
+msgstr ""
+
+#: ../data/gpass.schemas.in.h:13
+msgid "The launcher command for general"
+msgstr ""
+
+#: ../data/gpass.schemas.in.h:31
+msgid "false"
+msgstr "yanlış"
+
+#: ../data/gpass.schemas.in.h:32
+msgid "true"
+msgstr "doğru"
+
+#, fuzzy
+#~ msgid "Application Options:"
+#~ msgstr "Indtast kodeord"
+
+#, fuzzy
+#~ msgid "The GType of GPassFileReader or it subclass"
+#~ msgstr "Indtast kodeord"
+
+#, fuzzy
+#~ msgid "The GType of file reader"
+#~ msgstr "Uventet slut pÃ¥ filen."
+
+#, fuzzy
+#~ msgid "readable"
+#~ msgstr "Titel"
+
+#, fuzzy
+#~ msgid "Password and ID for '%s' copied to clipboard."
+#~ msgstr "KopiÃ©r kodeord til klippebordet"
+#~ msgid "Copy _Username"
+#~ msgstr "KopiÃ©r _brugernavn"
+
+#, fuzzy
+#~ msgid "<span foreground=\"red\">Empty passwords not allowed!</span>"
+#~ msgstr "KopiÃ©r kodeord til klippebordet"
+
+#, fuzzy
+#~ msgid "<span foreground=\"red\">The entered passwords do not match!</span>"
+#~ msgstr "<b>De to indtastede kodeord er ikke ens. PrÃ¸v venligst igen.</b>"
+
+#, fuzzy
+#~ msgid "The password created time"
+#~ msgstr "Nyt kodeord"
+
+#, fuzzy
+#~ msgid "The password modified time"
+#~ msgstr "Nyt kodeord"
+
+#, fuzzy
+#~ msgid "The password expires time"
+#~ msgstr "Nyt kodeord"
+
+#, fuzzy
+#~ msgid "CreationTime"
+#~ msgstr "Oprettelses tidspunkt"
+#~ msgid "Creation time"
+#~ msgstr "Oprettelses tidspunkt"
+
+#, fuzzy
+#~ msgid "ModificationTime"
+#~ msgstr "Sidste Ã¦ndring"
+
+#, fuzzy
+#~ msgid "Modification time"
+#~ msgstr "Oprettelses tidspunkt"
+
+#, fuzzy
+#~ msgid "ExpirationTime"
+#~ msgstr "Oprettelses tidspunkt"
+
+#, fuzzy
+#~ msgid "Expiration time"
+#~ msgstr "Oprettelses tidspunkt"
+
+#, fuzzy
+#~ msgid "Incorrect password! Please try again."
+#~ msgstr "<b>Forkert kodeord. PrÃ¸v venligst igen.</b>"
+#~ msgid "Too long line in password file"
+#~ msgstr "For lang linie i kodeordsfilen"
+
+#, fuzzy
+#~ msgid "Password entry '%s' inserted."
+#~ msgstr "Kodeord tilfÃ¸jet til samlingen"
+
+#, fuzzy
+#~ msgid "Password entry '%s' edited."
+#~ msgstr "Kodeord rettet."
+#~ msgid "Password entry removed."
+#~ msgstr "Kodeord slettet."
+
+#, fuzzy
+#~ msgid "Queued username and password for '%s' on clipboard."
+#~ msgstr "KopiÃ©r kodeord til klippebordet"
+#~ msgid "URL"
+#~ msgstr "url"
+#~ msgid "Password collection loaded."
+#~ msgstr "Kodeordssamling indlÃ¦st"
+#~ msgid "Old password"
+#~ msgstr "NuvÃ¦rende kodeord"
+#~ msgid ""
+#~ "<b>This appears to be the first time you run the GNOME Password Manager.</"
+#~ "b>\n"
+#~ "\n"
+#~ "Please enter a master password. This password will be used to encrypt "
+#~ "your password collection. \n"
+#~ "\n"
+#~ "The password collection is stored in the file .gpass/gpass.dat in your "
+#~ "home directory.\n"
+#~ "\n"
+#~ "<b>It is vital that you remember this password. Without it, you cannot "
+#~ "access the password collection.</b>"
+#~ msgstr ""
+#~ "<b>Dette lader til at vÃ¦re fÃ¸rste gang, at du anvender "
+#~ "kodesordsorganisatoren.\n"
+#~ "\n"
+#~ "Din kodeordssamling lagres i filen .gpass/gpass.dat under dit "
+#~ "hjemmekatalog.\n"
+#~ "\n"
+#~ "<b>Det er vigtigt, at du husker dit kodeord. Uden det korrekte kodeord "
+#~ "kan du ikke fÃ¥ adgang til kodeordssamlingen.</b>"
+#~ msgid "Verify password"
+#~ msgstr "Gentag kodeord"
+#~ msgid "http://"
+#~ msgstr "http://"
+#~ msgid "Expires"
+#~ msgstr "UdlÃ¸ber"
+#~ msgid "Yes, delete it"
+#~ msgstr "Ja, slet det"
+#~ msgid "<b>Are you sure, you want to delete the selected password entry?</b>"
+#~ msgstr ""
+#~ "<b>Er du sikker pÃ¥, at du Ã¸nsker at slette det valgte kodeord?</b>"
+#~ msgid "This is action is irrevertible."
+#~ msgstr "Denne handling kan ikke trÃ¦kkes tilbage"
+#~ msgid "<b>Password must be at least 6 characters long.</b>"
+#~ msgstr "<b>Dit kodeord skal mindst vÃ¦re 6 tegn langt</b>"
+#~ msgid "Don't close"
+#~ msgstr "Luk ikke"
+#~ msgid "Quit Password Manager"
+#~ msgstr "Afslut kodeordsorganisatoren"
+#~ msgid "_Advanced"
+#~ msgstr "_Avanceret"
+#~ msgid "No, keep it"
+#~ msgstr "Nej, behold det"
+
