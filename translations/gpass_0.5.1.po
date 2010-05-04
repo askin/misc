@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PasswordManager 0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-14 23:43+0900\n"
-"PO-Revision-Date: 2010-05-03 23:03+0200\n"
+"PO-Revision-Date: 2010-05-04 14:46+0200\n"
 "Last-Translator: Aşkın Yollu <askin@askin.ws>\n"
 "Language-Team: Danish <dansk@klid.dk>\n"
 "MIME-Version: 1.0\n"
@@ -82,7 +82,7 @@ msgstr "Metin"
 #: ../lib/password.c:229
 #: ../src/password-generator.c:106
 msgid "Password"
-msgstr ""
+msgstr "Parola"
 
 #: ../lib/attribute.c:57
 msgid "Url"
@@ -218,12 +218,13 @@ msgstr ""
 #: ../lib/configuration.c:438
 #: ../data/gpass.schemas.in.h:21
 msgid "Undo levels"
-msgstr ""
+msgstr "Geri alma seviyesi"
 
 #: ../lib/configuration.c:439
 #: ../data/gpass.schemas.in.h:15
+#, fuzzy
 msgid "The number of undo levels"
-msgstr ""
+msgstr "Geri alma seviye sayısı"
 
 #: ../lib/configuration.c:443
 #: ../data/preferences.glade.h:10
@@ -327,7 +328,7 @@ msgstr ""
 #: ../lib/entry-factory.c:258
 #: ../src/preferences.c:188
 msgid "Launcher"
-msgstr ""
+msgstr "Başlatıcı"
 
 #: ../lib/entry-factory.c:259
 msgid "The launcher of GPassEntry subclass"
@@ -365,7 +366,7 @@ msgstr ""
 #: ../lib/entry.c:346
 #: ../src/attribute-editor.c:242
 msgid "The entry type"
-msgstr ""
+msgstr "Girdi tipi"
 
 #: ../lib/entry.c:351
 msgid "The name of entry"
@@ -375,11 +376,11 @@ msgstr ""
 #: ../lib/entry.c:356
 #: ../src/command.c:135
 msgid "Description"
-msgstr ""
+msgstr "Açıklama"
 
 #: ../lib/entry.c:360
 msgid "Creation Time"
-msgstr ""
+msgstr "Oluşturma zamanı"
 
 #: ../lib/entry.c:361
 msgid "The creation time of entry"
@@ -387,7 +388,7 @@ msgstr ""
 
 #: ../lib/entry.c:366
 msgid "Modification Time"
-msgstr ""
+msgstr "Değiştirme zamanı"
 
 #: ../lib/entry.c:367
 msgid "The modification time of entry"
@@ -411,7 +412,7 @@ msgstr ""
 
 #: ../lib/entry.c:383
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: ../lib/entry.c:383
 msgid "The ID of entry"
@@ -424,17 +425,18 @@ msgstr ""
 #: ../lib/file.c:519
 #: ../lib/file.c:568
 msgid "data is too short"
-msgstr ""
+msgstr "veri çok kısa"
 
 #: ../lib/file-100.c:141
 #: ../lib/file.c:580
 msgid "invalid data"
-msgstr ""
+msgstr "geçersiz veri"
 
 #: ../lib/file.c:129
 #: ../lib/file04.c:123
+#, fuzzy
 msgid "Path"
-msgstr ""
+msgstr "Patika"
 
 #: ../lib/file.c:130
 msgid "The path of stored password collection file"
@@ -457,13 +459,13 @@ msgstr ""
 #: ../src/intergradation.c:119
 #: ../src/lock.c:70
 msgid "Incorrect password!"
-msgstr ""
+msgstr "Yanlış Parola!"
 
 #: ../lib/file.c:325
 #: ../lib/file.c:402
 #, c-format
 msgid "not support version: %s"
-msgstr ""
+msgstr "desteklenmeyen sürüm: %s"
 
 #: ../lib/file.c:610
 #: ../lib/file04.c:433
@@ -506,12 +508,12 @@ msgstr ""
 #: ../lib/folder.c:32
 #: ../tests/gpass/folder-test.c:87
 msgid "Folder"
-msgstr ""
+msgstr "Klasör"
 
 #: ../lib/general-password.c:91
 #: ../tests/gpass/general-password-test.c:87
 msgid "General"
-msgstr ""
+msgstr "Genel"
 
 #: ../lib/general-password.c:198
 #: ../lib/general-password.c:199
@@ -520,16 +522,16 @@ msgstr ""
 
 #: ../lib/pack.c:78
 msgid "invalid buffer"
-msgstr ""
+msgstr "geçersiz tampon"
 
 #: ../lib/password.c:223
 #: ../lib/password.c:224
 msgid "Username"
-msgstr ""
+msgstr "Kullanıcı adı"
 
 #: ../lib/password.c:271
 msgid "Random"
-msgstr ""
+msgstr "Rastgele"
 
 #: ../lib/password.c:298
 msgid "could not open random device"
@@ -567,14 +569,14 @@ msgstr ""
 #: ../tools/gpass-convert.c:183
 #: ../tools/gpass-convert.c:184
 msgid "Yes"
-msgstr ""
+msgstr "Evet"
 
 #: ../src/attribute-widgets.c:490
 #: ../src/summary.c:136
 #: ../tools/gpass-convert.c:183
 #: ../tools/gpass-convert.c:184
 msgid "No"
-msgstr ""
+msgstr "HAyır"
 
 #: ../src/attribute-widgets.c:935
 #: ../data/password-generator.glade.h:12
@@ -614,26 +616,26 @@ msgstr ""
 #: ../src/command.c:696
 #, c-format
 msgid "Edit %s"
-msgstr ""
+msgstr "Düzenle %s"
 
 #: ../src/command.c:993
 #, c-format
 msgid "Move %s"
-msgstr ""
+msgstr "Taşı %s"
 
 #: ../src/entry-tree.c:156
 msgid "Icon"
-msgstr ""
+msgstr "Simge"
 
 #: ../src/entry-tree.c:405
 #, c-format
 msgid "Removed `%s'."
-msgstr ""
+msgstr "Kaldırıldı `%s'"
 
 #: ../src/entry-tree.c:445
 #, c-format
 msgid "Moved `%s'."
-msgstr ""
+msgstr "Taşındı `%s'."
 
 #: ../src/intergradation.c:125
 #, c-format
