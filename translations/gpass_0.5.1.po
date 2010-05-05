@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PasswordManager 0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-14 23:43+0900\n"
-"PO-Revision-Date: 2010-05-04 14:46+0200\n"
+"PO-Revision-Date: 2010-05-05 23:06+0200\n"
 "Last-Translator: Aşkın Yollu <askin@askin.ws>\n"
 "Language-Team: Danish <dansk@klid.dk>\n"
 "MIME-Version: 1.0\n"
@@ -576,7 +576,7 @@ msgstr "Evet"
 #: ../tools/gpass-convert.c:183
 #: ../tools/gpass-convert.c:184
 msgid "No"
-msgstr "HAyır"
+msgstr "Hayır"
 
 #: ../src/attribute-widgets.c:935
 #: ../data/password-generator.glade.h:12
@@ -969,35 +969,35 @@ msgstr ""
 
 #: ../data/authentication.glade.h:1
 msgid "<b>Please enter the master password</b>"
-msgstr ""
+msgstr "<b>Lütfen ana şifrenizi girin</b>"
 
 #: ../data/authentication.glade.h:2
 msgid "Authentication"
-msgstr ""
+msgstr "Onaylama"
 
 #: ../data/authentication.glade.h:3
 #: ../data/intergradation.glade.h:10
 #: ../data/password-generator.glade.h:7
 #: ../data/welcome.glade.h:10
 msgid "Password:"
-msgstr ""
+msgstr "Parola:"
 
 #: ../data/authentication.glade.h:4
 msgid "_Authenticate"
-msgstr ""
+msgstr "_Onayla"
 
 #: ../data/change-master-password.glade.h:1
 msgid "    "
-msgstr ""
+msgstr "    "
 
 #: ../data/change-master-password.glade.h:2
 #: ../data/window.glade.h:2
 msgid "Change the master password"
-msgstr ""
+msgstr "Ana parolayı değiştir"
 
 #: ../data/change-master-password.glade.h:3
 msgid "Current password"
-msgstr ""
+msgstr "Mevcut parola"
 
 #: ../data/change-master-password.glade.h:4
 msgid "Entries the current master password"
@@ -1061,7 +1061,7 @@ msgstr ""
 
 #: ../data/intergradation.glade.h:11
 msgid "Please enter a master password."
-msgstr ""
+msgstr "Lütfen bir ana parola girin."
 
 #: ../data/intergradation.glade.h:12
 msgid "Succeeded intergradation"
@@ -1073,35 +1073,35 @@ msgstr ""
 
 #: ../data/lock.glade.h:1
 msgid "<b>GNOME Password Manager</b>"
-msgstr ""
+msgstr "<b>GNOME Parola Yöneticisi</b>"
 
 #: ../data/lock.glade.h:2
 msgid "Enter master password to unlock."
-msgstr ""
+msgstr "Kilidi açmak için ana parolayı girin."
 
 #: ../data/lock.glade.h:3
 msgid "Lock Screen"
-msgstr ""
+msgstr "Ekranı Kilitle"
 
 #: ../data/password-generator.glade.h:1
 msgid "<b>Generation of password</b>"
-msgstr ""
+msgstr "<b>Parola üretimi</b>"
 
 #: ../data/password-generator.glade.h:2
 msgid "<b>Use character</b>"
-msgstr ""
+msgstr "<b>Karakter kullan</b>"
 
 #: ../data/password-generator.glade.h:3
 msgid "Length:"
-msgstr ""
+msgstr "Uzunluk:"
 
 #: ../data/password-generator.glade.h:4
 msgid "Lowercase letters (a...z)"
-msgstr ""
+msgstr "Küçük harfler (a...z)"
 
 #: ../data/password-generator.glade.h:5
 msgid "Numbers (0...9)"
-msgstr ""
+msgstr "Sayılar (0...9)"
 
 #: ../data/password-generator.glade.h:6
 #, fuzzy
@@ -1111,19 +1111,19 @@ msgstr "Parola Oluşturucu"
 #: ../data/password-generator.glade.h:9
 #, no-c-format
 msgid "Special characters (%, $, ^ etc.)"
-msgstr ""
+msgstr "Özel karakterler (%, $, ^ vb.)"
 
 #: ../data/password-generator.glade.h:10
 msgid "Type:"
-msgstr ""
+msgstr "Tür:"
 
 #: ../data/password-generator.glade.h:11
 msgid "Uppercase letters (A...Z)"
-msgstr ""
+msgstr "Büyük harfler (A...Z)"
 
 #: ../data/preferences.glade.h:1
 msgid "<b>Lock</b>"
-msgstr ""
+msgstr "<b>Kilit</b>"
 
 #: ../data/preferences.glade.h:2
 msgid "<b>Resource</b>"
@@ -1135,7 +1135,7 @@ msgstr ""
 
 #: ../data/preferences.glade.h:4
 msgid "Automatically lock"
-msgstr ""
+msgstr "Otomatik kilitle"
 
 #: ../data/preferences.glade.h:5
 #, fuzzy
@@ -1171,14 +1171,20 @@ msgid ""
 "----------\n"
 "This appears to be the first time you run the GPass.\n"
 msgstr ""
+"GPass parola koleksiyonunuzu yönetmeye yarayan, GNU GPL lisansı ile dağıtılan, basit bir GNOME uygulamasıdır.\n"
+"\n"
+"Parola koleksiyonunuz, ana parola ile korunan şifrelir bir dosya içinde tutulur.\n"
+"\n"
+"----------\n"
+"Bu GPass'i ilk çalıştırdığınızda görünür.\n"
 
 #: ../data/welcome.glade.h:9
 msgid "Master Password"
-msgstr ""
+msgstr "Ana parola"
 
 #: ../data/welcome.glade.h:11
 msgid "Please enter a master password. This password will be used to encrypt your password collection. "
-msgstr ""
+msgstr "Lütfen bir ana parola giriniz. Bu parola, parola koleksiyonunuzu şifrelemek için kullanılacaktır."
 
 #: ../data/welcome.glade.h:12
 msgid ""
@@ -1269,11 +1275,11 @@ msgstr "_Araç çubuğu"
 
 #: ../data/window.glade.h:21
 msgid "_Unlink"
-msgstr ""
+msgstr "_Kaldır"
 
 #: ../data/gpass.desktop.in.in.h:1
 msgid "Manages your password collection"
-msgstr ""
+msgstr "Parola koleksiyonuzu yönetir"
 
 #: ../data/gpass.schemas.in.h:1
 msgid "15"
@@ -1293,11 +1299,11 @@ msgstr "500"
 
 #: ../data/gpass.schemas.in.h:5
 msgid "Launcher for folder"
-msgstr ""
+msgstr "Klasörler için başlatıcı"
 
 #: ../data/gpass.schemas.in.h:6
 msgid "Launcher for general"
-msgstr ""
+msgstr "Genel başlatıcı"
 
 #: ../data/gpass.schemas.in.h:8
 msgid "Screen lock"
