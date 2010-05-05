@@ -1,0 +1,406 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Mitter 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-04-08 17:07-0300\n"
+"PO-Revision-Date: 2010-05-05 22:32+0200\n"
+"Last-Translator: Aşkın Yollu <askin@askin.ws>\n"
+"Language-Team: Turkish <askin@askin.ws>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: mitter:59
+msgid "Display debugging information."
+msgstr ""
+
+#: mitter:67
+msgid "Interface to be used."
+msgstr ""
+
+#: mitter:104
+msgid "Sorry, no interface could be found for your system"
+msgstr ""
+
+#: mitterlib/network/twitter.py:378
+msgid "Username"
+msgstr "Kullanıcı adı"
+
+#: mitterlib/network/twitter.py:379
+msgid "Your twitter username"
+msgstr ""
+
+#: mitterlib/network/twitter.py:383
+msgid "Password"
+msgstr "Parola"
+
+#: mitterlib/network/twitter.py:384
+msgid "Your twitter password"
+msgstr "Twitter parolanız"
+
+#: mitterlib/network/twitter.py:397
+msgid "Disable HTTPS (secure) connection with Twitter."
+msgstr ""
+
+#: mitterlib/ui/ui_pygtk.py:210
+msgid "_File"
+msgstr "_Dosya"
+
+#: mitterlib/ui/ui_pygtk.py:210
+msgid "File"
+msgstr "Dosya"
+
+#: mitterlib/ui/ui_pygtk.py:213
+msgid "_Edit"
+msgstr "D_üzenle"
+
+#: mitterlib/ui/ui_pygtk.py:213
+msgid "Edit"
+msgstr "Düzenle"
+
+#: mitterlib/ui/ui_pygtk.py:216
+msgid "_Message"
+msgstr "_Mesaj"
+
+#: mitterlib/ui/ui_pygtk.py:217
+msgid "Message related options"
+msgstr ""
+
+#: mitterlib/ui/ui_pygtk.py:220
+msgid "_View"
+msgstr "_Göster"
+
+#: mitterlib/ui/ui_pygtk.py:220
+msgid "View"
+msgstr "Göster"
+
+#: mitterlib/ui/ui_pygtk.py:223
+msgid "_Help"
+msgstr "_Yardım"
+
+#: mitterlib/ui/ui_pygtk.py:223
+msgid "Help"
+msgstr "Yardım"
+
+#: mitterlib/ui/ui_pygtk.py:227
+msgid "_Quit"
+msgstr "_Çıkış"
+
+#: mitterlib/ui/ui_pygtk.py:228
+msgid "Exit Mitter"
+msgstr "Mitterden Çık"
+
+#: mitterlib/ui/ui_pygtk.py:233
+msgid "_Refresh"
+msgstr "_Tazele"
+
+#: mitterlib/ui/ui_pygtk.py:234
+msgid "Update the listing"
+msgstr ""
+
+#: mitterlib/ui/ui_pygtk.py:238
+msgid "_Clear"
+msgstr "_Temizle"
+
+#: mitterlib/ui/ui_pygtk.py:239
+msgid "Clear the message list"
+msgstr "Mesaj listesini temizle"
+
+#: mitterlib/ui/ui_pygtk.py:243
+msgid "_Mark All Read"
+msgstr "Hepsini _Okundu İşraretle"
+
+#: mitterlib/ui/ui_pygtk.py:244
+msgid "Mark all messages as read"
+msgstr "Tüm mesajları okundu olarak işaretle"
+
+#: mitterlib/ui/ui_pygtk.py:248
+msgid "_Update"
+msgstr "_Güncelle"
+
+#: mitterlib/ui/ui_pygtk.py:249
+msgid "Update your status"
+msgstr "Durumunu güncelle"
+
+#: mitterlib/ui/ui_pygtk.py:253
+msgid "_Cancel"
+msgstr "_İptal"
+
+#: mitterlib/ui/ui_pygtk.py:254
+msgid "Cancel the update"
+msgstr "Güncellemeyi iptal et"
+
+#: mitterlib/ui/ui_pygtk.py:258
+msgid "_Settings"
+msgstr "_Ayarlar"
+
+#: mitterlib/ui/ui_pygtk.py:259
+#: mitterlib/ui/ui_pygtk.py:633
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: mitterlib/ui/ui_pygtk.py:264
+msgid "_New"
+msgstr "_Yeni"
+
+#: mitterlib/ui/ui_pygtk.py:265
+msgid "Post a new message"
+msgstr "Yeni bir mesaj gönder"
+
+#: mitterlib/ui/ui_pygtk.py:269
+msgid "_Delete"
+msgstr "_Sil"
+
+#: mitterlib/ui/ui_pygtk.py:270
+msgid "Delete a post"
+msgstr "Bir mesaj sil"
+
+#: mitterlib/ui/ui_pygtk.py:275
+msgid "_Reply"
+msgstr "_Cevapla"
+
+#: mitterlib/ui/ui_pygtk.py:276
+msgid "Send a response to someone's else message"
+msgstr ""
+
+#: mitterlib/ui/ui_pygtk.py:282
+msgid "Re_post"
+msgstr ""
+
+#: mitterlib/ui/ui_pygtk.py:283
+msgid "Put someone's else message on your timeline"
+msgstr ""
+
+#: mitterlib/ui/ui_pygtk.py:289
+msgid "_Favorite"
+msgstr "_Favori"
+
+#: mitterlib/ui/ui_pygtk.py:290
+msgid "Toggle the favorite status of a message"
+msgstr ""
+
+#: mitterlib/ui/ui_pygtk.py:297
+msgid "_Messages"
+msgstr "_Mesajlar"
+
+#: mitterlib/ui/ui_pygtk.py:298
+msgid "Display messages"
+msgstr "Mesajları göster"
+
+#: mitterlib/ui/ui_pygtk.py:303
+msgid "_Replies"
+msgstr "_Cevaplar"
+
+#: mitterlib/ui/ui_pygtk.py:304
+msgid "Display replies"
+msgstr "Cevapları göster"
+
+#: mitterlib/ui/ui_pygtk.py:309
+msgid "_About"
+msgstr "_Hakkında"
+
+#: mitterlib/ui/ui_pygtk.py:309
+msgid "About Mitter"
+msgstr "Mitter Hakkında"
+
+#: mitterlib/ui/ui_pygtk.py:338
+msgid "Mitter project page"
+msgstr "Mitter proje sayfası"
+
+#: mitterlib/ui/ui_pygtk.py:378
+msgid "Retrieving messages..."
+msgstr ""
+
+#: mitterlib/ui/ui_pygtk.py:395
+msgid "message"
+msgstr "mesaj"
+
+#: mitterlib/ui/ui_pygtk.py:397
+msgid "reply"
+msgstr "cevap"
+
+#: mitterlib/ui/ui_pygtk.py:425
+#, python-format
+msgid "Messages (%d)"
+msgstr "Mesajlar (%d)"
+
+#: mitterlib/ui/ui_pygtk.py:445
+#, python-format
+msgid "Replies (%d)"
+msgstr "Cevaplar (%d)"
+
+#: mitterlib/ui/ui_pygtk.py:502
+msgid "Sending update..."
+msgstr ""
+
+#: mitterlib/ui/ui_pygtk.py:562
+msgid "Delete this message?"
+msgstr "Bu mesaj silinsin mi?"
+
+#: mitterlib/ui/ui_pygtk.py:572
+msgid "Deleting message..."
+msgstr "Mesajlar siliniyor..."
+
+#: mitterlib/ui/ui_pygtk.py:601
+#, python-format
+msgid "Reposting %s message..."
+msgstr ""
+
+#: mitterlib/ui/ui_pygtk.py:621
+#, python-format
+msgid "Removing message from %s from favorites..."
+msgstr ""
+
+#: mitterlib/ui/ui_pygtk.py:623
+#, python-format
+msgid "Marking message from %s as favorite..."
+msgstr ""
+
+#: mitterlib/ui/ui_pygtk.py:650
+msgid "Refresh interval (minutes):"
+msgstr ""
+
+#: mitterlib/ui/ui_pygtk.py:655
+msgid "Interface"
+msgstr "Arayüz"
+
+#: mitterlib/ui/ui_pygtk.py:664
+msgid "Proxy:"
+msgstr ""
+
+#: mitterlib/ui/ui_pygtk.py:668
+msgid "Networks"
+msgstr ""
+
+#: mitterlib/ui/ui_pygtk.py:776
+msgid "Retrieving replies..."
+msgstr ""
+
+#: mitterlib/ui/ui_pygtk.py:788
+msgid "Error retrieving current messages. Auto-refresh disabled. Use the \"Refresh\" option to re-enable it."
+msgstr ""
+
+#: mitterlib/ui/ui_pygtk.py:794
+msgid "Auto-update disabled"
+msgstr ""
+
+#: mitterlib/ui/ui_pygtk.py:810
+msgid "New messages retrieved."
+msgstr ""
+
+#: mitterlib/ui/ui_pygtk.py:811
+#, python-format
+msgid "Next update in %d minute"
+msgstr ""
+
+#: mitterlib/ui/ui_pygtk.py:855
+msgid "Your status was updated."
+msgstr ""
+
+#: mitterlib/ui/ui_pygtk.py:866
+msgid "Error updating your status. Please try again."
+msgstr ""
+
+#: mitterlib/ui/ui_pygtk.py:883
+msgid "Message deleted."
+msgstr "Mesaj silindi."
+
+#: mitterlib/ui/ui_pygtk.py:896
+msgid "Message reposted"
+msgstr "Mesaj yeniden gönderildi"
+
+#: mitterlib/ui/ui_pygtk.py:906
+msgid "Error reposting message. Please try again."
+msgstr ""
+
+#: mitterlib/ui/ui_pygtk.py:918
+msgid "Message favorited."
+msgstr ""
+
+#: mitterlib/ui/ui_pygtk.py:920
+msgid "Message unfavorited."
+msgstr ""
+
+#: mitterlib/ui/ui_pygtk.py:931
+msgid "Error changing favorite status of the message. Please, try again."
+msgstr ""
+
+#: mitterlib/ui/ui_pygtk.py:1018
+msgid "Refresh interval."
+msgstr ""
+
+#: mitterlib/ui/ui_pygtk.py:1027
+msgid "Disable the use of the status icon."
+msgstr ""
+
+#: mitterlib/ui/ui_pygtk.py:1115
+msgid "<small>(protected)</small>"
+msgstr ""
+
+#: mitterlib/ui/helpers/gtk_updatebox.py:108
+#, python-format
+msgid "(replying to %s)"
+msgstr ""
+
+#: mitterlib/ui/helpers/gtk_updatebox.py:129
+#, python-format
+msgid "%d character"
+msgstr "%d karakter"
+
+#: mitterlib/ui/helpers/timesince.py:42
+msgid "year"
+msgstr "yıl"
+
+#: mitterlib/ui/helpers/timesince.py:43
+msgid "month"
+msgstr "ay"
+
+#: mitterlib/ui/helpers/timesince.py:44
+msgid "week"
+msgstr "hafta"
+
+#: mitterlib/ui/helpers/timesince.py:45
+msgid "day"
+msgstr "gün"
+
+#: mitterlib/ui/helpers/timesince.py:46
+msgid "hour"
+msgstr "saat"
+
+#: mitterlib/ui/helpers/timesince.py:47
+msgid "minute"
+msgstr "dakika"
+
+#: mitterlib/ui/helpers/timesince.py:55
+msgid "just now"
+msgstr "şimdi"
+
+#: mitterlib/ui/helpers/timesince.py:66
+#, python-format
+msgid "%s ago"
+msgstr "%s önce"
+
+#: mitterlib/ui/helpers/timesince.py:70
+msgid "less than a minute ago"
+msgstr ""
+
+#: mitterlib/ui/helpers/gtk_messagegrid.py:204
+#, python-format
+msgid " &#8212; <i>reposted by %s</i>"
+msgstr ""
+
+#: mitterlib/ui/helpers/gtk_messagegrid.py:208
+#, python-format
+msgid " &#8212; <i>in reply to %s</i>"
+msgstr ""
+
+#: mitterlib/ui/helpers/gtk_messagegrid.py:276
+#, python-format
+msgid "Open on %s"
+msgstr ""
+
