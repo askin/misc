@@ -9,13 +9,14 @@ msgstr ""
 "Project-Id-Version: PasswordManager 0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-14 23:43+0900\n"
-"PO-Revision-Date: 2010-05-05 23:06+0200\n"
+"PO-Revision-Date: 2010-05-07 13:41+0200\n"
 "Last-Translator: Aşkın Yollu <askin@askin.ws>\n"
-"Language-Team: Danish <dansk@klid.dk>\n"
+"Language-Team: Turkish <askin@askin.ws>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: TURKEY\n"
 
 #: ../lib/attribute-list.c:97
 msgid "List"
@@ -90,7 +91,7 @@ msgstr "Url"
 
 #: ../lib/attribute.c:59
 msgid "Entry Type"
-msgstr ""
+msgstr "Girdi Tipi"
 
 #: ../lib/attribute.c:215
 #: ../lib/entry-factory.c:248
@@ -222,7 +223,6 @@ msgstr "Geri alma seviyesi"
 
 #: ../lib/configuration.c:439
 #: ../data/gpass.schemas.in.h:15
-#, fuzzy
 msgid "The number of undo levels"
 msgstr "Geri alma seviye sayısı"
 
@@ -230,7 +230,7 @@ msgstr "Geri alma seviye sayısı"
 #: ../data/preferences.glade.h:10
 #: ../data/gpass.schemas.in.h:22
 msgid "Visible secrets"
-msgstr ""
+msgstr "Parolalar görünsün"
 
 #: ../lib/configuration.c:444
 #: ../data/gpass.schemas.in.h:24
@@ -248,7 +248,7 @@ msgstr ""
 
 #: ../lib/configuration.c:455
 msgid "Lock timeout"
-msgstr ""
+msgstr "Kilit için zaman aşımı"
 
 #: ../lib/configuration.c:456
 #: ../data/gpass.schemas.in.h:14
@@ -404,7 +404,7 @@ msgstr ""
 
 #: ../lib/entry.c:377
 msgid "Expiration Time"
-msgstr ""
+msgstr "Son kullanma tarihi"
 
 #: ../lib/entry.c:378
 msgid "The expiration time of entry"
@@ -434,7 +434,6 @@ msgstr "geçersiz veri"
 
 #: ../lib/file.c:129
 #: ../lib/file04.c:123
-#, fuzzy
 msgid "Path"
 msgstr "Patika"
 
@@ -445,12 +444,12 @@ msgstr ""
 #: ../lib/file.c:134
 #: ../lib/file04.c:128
 msgid "Master password"
-msgstr ""
+msgstr "Ana parola"
 
 #: ../lib/file.c:135
 #: ../lib/file04.c:129
 msgid "The master password"
-msgstr ""
+msgstr "Ana parola"
 
 #: ../lib/file.c:192
 #: ../lib/file04.c:186
@@ -499,11 +498,11 @@ msgstr ""
 
 #: ../lib/file04.c:124
 msgid "The path of db"
-msgstr ""
+msgstr "DB yolu"
 
 #: ../lib/file04.c:482
 msgid "Password file corrupted!"
-msgstr ""
+msgstr "Parola dosyası bozulmul!"
 
 #: ../lib/folder.c:32
 #: ../tests/gpass/folder-test.c:87
@@ -543,7 +542,7 @@ msgstr ""
 
 #: ../lib/password.c:327
 msgid "must set length"
-msgstr ""
+msgstr "uzunluğu belirtmelisiniz"
 
 #: ../lib/password.c:331
 #: ../lib/password.c:348
@@ -581,17 +580,17 @@ msgstr "Hayır"
 #: ../src/attribute-widgets.c:935
 #: ../data/password-generator.glade.h:12
 msgid "_Generate"
-msgstr ""
+msgstr "_Üret"
 
 #: ../src/change-master-password.c:81
 #: ../src/welcome.c:84
 msgid "Empty passwords not allowed!"
-msgstr ""
+msgstr "Boş parolaya izin verilmiyor!"
 
 #: ../src/change-master-password.c:85
 #: ../src/welcome.c:90
 msgid "The entered passwords do not match!"
-msgstr ""
+msgstr "Girdiğiniz parolalar uyuşmuyor!"
 
 #: ../src/command.c:130
 msgid "GPassApplication"
@@ -659,15 +658,15 @@ msgstr ""
 
 #: ../src/lock.c:97
 msgid "Password collection is changed!"
-msgstr ""
+msgstr "Parola koleksiyonu değiştirildi!"
 
 #: ../src/password-generator.c:107
 msgid "The generated password"
-msgstr ""
+msgstr "Üretilmiş parola"
 
 #: ../src/summary.c:48
 msgid "A simple password manager for GNOME 2\n"
-msgstr ""
+msgstr "GNOME 2 için basit bir parola yöneticisi\n"
 
 #: ../src/summary.c:53
 msgid ""
@@ -675,14 +674,18 @@ msgid ""
 "\n"
 " The password collection is stored in an encrypted file, protected by a master-password.\n"
 msgstr ""
+"GPass parola koleksiyonunuzu yönetmeye yarayan, GNU GPL lisansı ile dağıtılan, basit bir GNOME uygulamasıdır.\n"
+"\n"
+"Parola koleksiyonunuz, ana parola ile korunan şifreli bir dosya içinde tutulur.\n"
+"\n"
 
 #: ../src/summary.c:220
 msgid "<no name>"
-msgstr ""
+msgstr "<isim yok>"
 
 #: ../src/summary.c:229
 msgid "<no description>"
-msgstr ""
+msgstr "<tanım yok>"
 
 #: ../src/view-factory.c:128
 #: ../src/view-factory.c:151
@@ -730,7 +733,7 @@ msgstr ""
 
 #: ../src/window.c:573
 msgid "Password collection saved."
-msgstr ""
+msgstr "Parola koleksiyonu kaydedildi."
 
 #: ../src/window.c:576
 msgid "No changed the password collection."
@@ -803,22 +806,22 @@ msgstr ""
 #: ../src/window.c:1070
 #, c-format
 msgid "Copied `%s'."
-msgstr ""
+msgstr "Kopyalandı `%s'."
 
 #: ../src/window.c:1092
 #, c-format
 msgid "Cut %s"
-msgstr ""
+msgstr "Kes %s"
 
 #: ../src/window.c:1094
 #, c-format
 msgid "Cutted `%s'."
-msgstr ""
+msgstr "Kesildi `%s'."
 
 #: ../src/window.c:1129
 #, c-format
 msgid "Paste %s"
-msgstr ""
+msgstr "Yapıştır %s"
 
 #: ../src/window.c:1131
 #, c-format
@@ -831,19 +834,19 @@ msgstr ""
 
 #: ../src/window.c:1180
 msgid "Show the toolbar."
-msgstr ""
+msgstr "Araç çubuğunu göster."
 
 #: ../src/window.c:1184
 msgid "Hide the toolbar."
-msgstr ""
+msgstr "Araç çubuğunu gizle."
 
 #: ../src/window.c:1203
 msgid "Show the statusbar."
-msgstr ""
+msgstr "Durum çubuğunu göster."
 
 #: ../src/window.c:1207
 msgid "Hide the statusbar."
-msgstr ""
+msgstr "Durum çubuğunu gizle."
 
 #: ../src/window.c:1219
 msgid "Morten Fjord-Larsen"
@@ -855,20 +858,20 @@ msgstr ""
 
 #: ../src/window.c:1232
 msgid "Translator"
-msgstr ""
+msgstr "Çeviri"
 
 #: ../src/window.c:1236
 msgid "Put your translator here."
-msgstr ""
+msgstr "Aşkın Yollu <askin@askin.ws>"
 
 #: ../src/window.c:1244
 #: ../data/window.glade.h:10
 msgid "GPass"
-msgstr ""
+msgstr "GPass"
 
 #: ../src/window.c:1247
 msgid "A simple password manager for the GNOME desktop"
-msgstr ""
+msgstr "GNOME masaüstü için basit bir parola yöneticisi"
 
 #: ../src/main.c:93
 msgid "One instance of GPass is already running."
@@ -886,15 +889,15 @@ msgstr ""
 
 #: ../tools/gpass-convert.c:177
 msgid "Version"
-msgstr ""
+msgstr "Version"
 
 #: ../tools/gpass-convert.c:177
 msgid "Read"
-msgstr ""
+msgstr "Oku"
 
 #: ../tools/gpass-convert.c:177
 msgid "Write"
-msgstr ""
+msgstr "Yaz"
 
 #: ../tools/gpass-convert.c:200
 msgid "could not run stty\n"
@@ -1104,7 +1107,6 @@ msgid "Numbers (0...9)"
 msgstr "Sayılar (0...9)"
 
 #: ../data/password-generator.glade.h:6
-#, fuzzy
 msgid "Password Generator"
 msgstr "Parola Oluşturucu"
 
@@ -1138,7 +1140,6 @@ msgid "Automatically lock"
 msgstr "Otomatik kilitle"
 
 #: ../data/preferences.glade.h:5
-#, fuzzy
 msgid "Environment"
 msgstr "Ortam"
 
@@ -1148,11 +1149,11 @@ msgstr "Başlatıcılar"
 
 #: ../data/preferences.glade.h:7
 msgid "Lock after (minutes):"
-msgstr ""
+msgstr "Kilit süresi (dakika):"
 
 #: ../data/preferences.glade.h:8
 msgid "Number of undo levels:"
-msgstr ""
+msgstr "Geri alma seviyesi:"
 
 #: ../data/preferences.glade.h:9
 msgid "Preferences"
@@ -1307,11 +1308,11 @@ msgstr "Genel başlatıcı"
 
 #: ../data/gpass.schemas.in.h:8
 msgid "Screen lock"
-msgstr ""
+msgstr "Ekranı kilitle"
 
 #: ../data/gpass.schemas.in.h:9
 msgid "Screen lock timeout"
-msgstr ""
+msgstr "Ekranı kilitleme zaman aşımı"
 
 #: ../data/gpass.schemas.in.h:12
 msgid "The launcher command for folder"
