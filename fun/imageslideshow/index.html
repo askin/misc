@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Having Fun with JQuery</title>
+  </head>
+  <body>
+    <script src="jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $i = 1;
+      setInterval(function() {
+          // p argument is used to invalidate old images
+          $img = '<div class="rr"><img src="rotate.php?p=' + $i++ + '" name="pic" /><div>';
+          $('.rr').remove();
+          $('.mm').append($img);
+      }, 1000);
+    </script>
+    <div class="mm">
+      <div class="rr"><img src="rotate.php"/><div>
+    </div>
+  </body>
+</html>
