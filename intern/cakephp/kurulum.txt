@@ -1,0 +1,16 @@
+Slayttaki gibi kurulum yapıldıktan sonra,  app dizini içindeki
+	models dizini içine my_models içindeki dosyalar konulmalı.
+	views  dizini içine my_views içindeki dizinler konulmalı.
+	controllers dizini içine my_controllers içindeki dosyalar konulmalı.
+	
+app/config dizini içindeki database.php.default dosyası içinde veritabanı sunucusu ayarları yapılıp, database.php adı ile kaydedilmeli.
+
+db.sql dosyası phpmyadmin ile örnek için yaratılmış veritabanına eklenmeli.
+
+kurulumun localhost kök dizinine yapıldığını var sayıyorum.
+http://localhost/posts sayfası çağırıldığında, yazılan mesajlar görülebilir.
+http://localhost/posts/add sayfası çağırıldığında yeni mesaj eklenebilir.
+
+http://localhost/users/login sayfası ile kullanıcı girişi yapılır.
+http://localhost/users/register sayfası ile yeni kullanıcı kaydı yapılır.
+
