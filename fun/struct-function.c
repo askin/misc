@@ -1,35 +1,47 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /*
  * Sinifimizi yaratiyoruz
  */
 struct _myobject {
-  // alt alanlar
-  int a, b;
-  /*
-   * Metod
-   * Burada fonksiyon pointeri tanimliyoruz
-   */
-  int (*add)(struct _myobject*);
+    // attributes
+    int a, b;
+    /*
+     * Methed
+     * Fonction pointer
+     */
+    int (*add)(struct _myobject*);
 };
 
-// struct on ekinden kurtuluyoruz
+// get out struct prefix
 typedef struct _myobject MyObject;
 
 /*
- * Asil isi yapacak fonksiyonu tanimliyoruz
- * MyObject structini parametre olarak aliyor
+ * Define Method
+ * Get MyObject struct as a parameter
  */
 int realAdd(MyObject* a) {
   return a->a + a->b;
 }
 
+// Constructer
+MyObject* InitMyObject(int a, int b) {
+    MyObject* obj = malloc(sizeof(MyObject));
+    if(obj == NULL) {
+        return NULL;
+    } else {
+        obj->a   = a;
+        obj->b   = b;
+        obj->add = realAdd;
+    }
+}
+
 int main ( void ) {
-  /*
-   * Nesnemizi olusturuyoruz.
-   * add pointerina fonksiyonu atiyoruz
-   */
-  MyObject mo = {1, 2, realAdd};
-  printf("A + B = %d\n", mo.add(&mo));
-  return 0;
+    /*
+     * Create Object
+     */
+    MyObject* mo = InitMyObject(1, 2);
+    printf("A + B = %d\n", mo->add(mo));
+    return 0;
 }
