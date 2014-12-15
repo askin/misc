@@ -1,0 +1,6 @@
+#!/bin/sh
+
+AKOR_URL=$1
+FILE_NAME=$(echo ${AKOR_URL} |  awk -F \/ '{print tolower($7"_"$8".txt");}')
+
+curl ${AKOR_URL} | html2text -utf8 > ${FILE_NAME}
